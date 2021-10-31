@@ -1,3 +1,4 @@
+<?php
 include("connection.php");
 class Incident {
 	protected $conn;
@@ -10,9 +11,10 @@ class Incident {
 	}
 	
 	public function getIncidents() {
-		$sql = "SELECT * FROM incident";
+		$sql = "SELECT * FROM public.incident";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
 		$data = pg_fetch_all($queryRecords);
 		return $data;
 	}
 }
+?>

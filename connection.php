@@ -3,12 +3,12 @@ Class dbObj{
 	/* Database connection start */
         var $servername, $username, $password, $dbname, $port, $conn;
 
-	__construct()
+	function __construct()
 	{
-	  $this->servername = "localhost";
+	  $this->servername = "192.168.86.2";
 	  $this->username = "postgres";
 	  $this->password = "Boomer2025";
-	  $this->dbname = "incidents";
+	  $this->dbname = "incident";
 	  $this->port = "5432";
 	}
 	function getConnstring() {
