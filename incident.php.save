@@ -10,7 +10,7 @@ include("connection.php");
 class Incident {
 	protected $conn;
 	protected $data = array();
-	public function __construct()  {
+	function function __construct()  {
 
 		$db = new dbObj();
 		$connString =  $db->getConnstring();
