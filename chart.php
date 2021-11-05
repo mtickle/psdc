@@ -21,12 +21,15 @@ var ctx = document.getElementById('myChart');
         type: 'bar',
         data: {
             labels: [
-		'Red'
-		, 'Blue'
-		, 'Yellow'
-		, 'Green'
-		, 'Purple'
-		, 'Orange'
+                <?php foreach($crimes as $key => $crime) :?>
+                    <?php echo $crime['crime_description'] ?>,
+                    <?php endforeach;?>           
+		// 'Red'
+		// , 'Blue'
+		// , 'Yellow'
+		// , 'Green'
+		// , 'Purple'
+		// , 'Orange'
 		],
             datasets: [{
 		label: 'RPD Incident Analysis',
