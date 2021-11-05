@@ -6,6 +6,7 @@
     $newObj = new Incident();
     $crimes = $newObj->getCrimeTypeStats();
     $temp_crime_code = "";
+    $temp_crime_description = "";
     $temp_crime_count = "";
 
 	//-------------------------------------------------------------
@@ -16,13 +17,23 @@
 	$temp_crime_code = rtrim($temp_crime_code, ',');
 	//-------------------------------------------------------------
 
+
+	 //-------------------------------------------------------------
+        //--- build out the array for the crime code
+        foreach($crimes as $key => $crime) :
+                $temp_crime_description .= "'". $crime['crime_description'] . "',";
+        endforeach;
+        $temp_crime_description = rtrim($temp_crime_description, ',');
+        //-------------------------------------------------------------
+
+
+
 	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
 	foreach($crimes as $key => $crime) :
                 $temp_crime_count .= "'". $crime['crime_count'] . "',";
         endforeach;
         $temp_crime_count = rtrim($temp_crime_count, ',');
-
 	//-------------------------------------------------------------
 
 
@@ -41,7 +52,7 @@ var ctx = document.getElementById('myChart');
             labels: [
 
                 
-                    <?php echo $temp_crime_code ?>
+                    <?php echo $temp_crime_description ?>
 
 		// 'Red'
 		// , 'Blue'
