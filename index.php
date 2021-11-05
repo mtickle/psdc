@@ -2,7 +2,7 @@
 <?php
     include("incident.php");
     $newObj = new Incident();
-    $emps = $newObj->getIncidents();
+    $incidents = $newObj->getIncidents();
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -44,12 +44,12 @@ error_reporting(E_ALL);
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($emps as $key => $emp) :?>
+                <?php foreach($incidents as $key => $incident) :?>
                 <tr>
-                    <td><?php echo $emp['reported_date'] ?></td>
-                    <td><?php echo $emp['crime_description'] ?></td>
-                    <td><?php echo $emp['city_of_incident'] ?></td>
-                    <td><?php echo $emp['district'] ?></td>
+                    <td><?php echo $incident['reported_date'] ?></td>
+                    <td><?php echo $incident['crime_description'] ?></td>
+                    <td><?php echo $incident['city_of_incident'] ?></td>
+                    <td><?php echo $incident['district'] ?></td>
                 </tr>
             <?php endforeach;?>
             </tbody>
