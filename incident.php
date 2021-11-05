@@ -16,7 +16,7 @@ class Incident {
 	}
 	
 	public function getIncidents() {
-		$sql = "SELECT * FROM incident";
+		$sql = "select * from get_incidents();";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
 		$data = pg_fetch_all($queryRecords);
 		return $data;

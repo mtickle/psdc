@@ -5,13 +5,31 @@
 
     $newObj = new Incident();
     $crimes = $newObj->getCrimeTypeStats();
+    $temp_crime_code = "";
+    $temp_crime_count = "";
+
+	//-------------------------------------------------------------
+	//--- build out the array for the crime code
+  	foreach($crimes as $key => $crime) :
+		$temp_crime_code .= "'". $crime['crime_code'] . "',";
+	endforeach;
+	$temp_crime_code = rtrim($temp_crime_code, ',');
+	//-------------------------------------------------------------
+
+	//-------------------------------------------------------------
+	//--- Build out the array for the record counts
+	foreach($crimes as $key => $crime) :
+                $temp_crime_count .= "'". $crime['crime_count'] . "',";
+        endforeach;
+        $temp_crime_count = rtrim($temp_crime_count, ',');
+
+	//-------------------------------------------------------------
+
+
+	
+
+
 ?>
-
-<?php foreach($crimes as $key => $crime) :?>
-
-    <?php echo $crime['crime_description'] ?>
-    <?php echo $crime['crime_count'] ?>
-    <?php endforeach;?>
 
 
 <script>
@@ -21,9 +39,10 @@ var ctx = document.getElementById('myChart');
         type: 'bar',
         data: {
             labels: [
-                <?php foreach($crimes as $key => $crime) :?>
-                    <?php echo $crime['crime_description'] ?>,
-                    <?php endforeach;?>           
+
+                
+                    <?php echo $temp_crime_code ?>
+
 		// 'Red'
 		// , 'Blue'
 		// , 'Yellow'
@@ -34,12 +53,13 @@ var ctx = document.getElementById('myChart');
             datasets: [{
 		label: 'RPD Incident Analysis',
                 data: [
-		12
-		, 19
-		, 3
-		, 5
-		, 2
-		, 3
+		<?php echo $temp_crime_count ?>
+		//12
+		//, 19
+		//, 3
+		//, 5
+		//, 2
+		//, 3
 		],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',

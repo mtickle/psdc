@@ -39,7 +39,7 @@ error_reporting(E_ALL);
                 <tr>
                     <th>Date</th>
                     <th>Description</th>
-                    <th>City</th>
+                    <th>Address</th>
                     <th>District</th>
                 </tr>
             </thead>
@@ -48,7 +48,7 @@ error_reporting(E_ALL);
                 <tr>
                     <td><?php echo $incident['reported_date'] ?></td>
                     <td><?php echo $incident['crime_description'] ?></td>
-                    <td><?php echo $incident['city_of_incident'] ?></td>
+                    <td><?php echo $incident['reported_block_address'] ?></td>
                     <td><?php echo $incident['district'] ?></td>
                 </tr>
             <?php endforeach;?>
