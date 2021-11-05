@@ -1,11 +1,10 @@
 <?php
-    include("crime_type_chart_data.php");
-    $newObj = new CrimeTypeStats();
-    $crimes = $newObj->getCrimeTypeStats();
-
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
+
+    $newObj = new Incident();
+    $crimes = $newObj->getCrimeTypeStats();
 ?>
 
 <?php foreach($crimes as $key => $crime) :?>
