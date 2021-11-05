@@ -1,13 +1,29 @@
+<?php ?>
+
 <script>
 
 var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: [
+		'Red'
+		, 'Blue'
+		, 'Yellow'
+		, 'Green'
+		, 'Purple'
+		, 'Orange'
+		],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+		label: 'RPD Incident Analysis',
+                data: [
+		12
+		, 19
+		, 3
+		, 5
+		, 2
+		, 3
+		],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -28,6 +44,7 @@ var ctx = document.getElementById('myChart');
             }]
         },
         options: {
+	indexAxis: 'y',
             scales: {
                 y: {
                     beginAtZero: true
@@ -37,3 +54,5 @@ var ctx = document.getElementById('myChart');
     });
 
 </script>
+
+

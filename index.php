@@ -19,20 +19,22 @@ error_reporting(E_ALL);
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <title>Simple table listing using Postgres database</title>
+  <title>RPD Incidents</title>
 </head>
 <body>
   <div class="container">
 
-
-  <canvas id="myChart" width="400" height="300"></canvas>
-
-
-    <div class="col-sm-6" style="padding-top:50px;">
+    <div class="col-sm-12" style="padding-top:50px;">
         <div class="well">
-            <h2>Simple table listing using PHP and Postgres database</h2>
+            <h2>RPD Incidents</h2>
         </div>
-        <table id="employee_grid" class="table" width="100%" cellspacing="0">
+
+<div class="chart-container" style="height:400px; width:800px">
+    <canvas id="myChart"></canvas>
+</div>
+      
+
+  <table id="employee_grid" class="table" width="100%" cellspacing="0">
             <thead>
                 <tr>
                     <th>Date</th>
