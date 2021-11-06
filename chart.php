@@ -5,9 +5,12 @@
 
     $newObj = new Incident();
     $crimes = $newObj->getCrimeTypeStats();
+    $charges = $newObj->getTopCharges();
     $temp_crime_code = "";
     $temp_crime_description = "";
     $temp_crime_count = "";
+    $temp_charge = "";
+    $temp_charge_coun = "";
 
 	//-------------------------------------------------------------
 	//--- build out the array for the crime code

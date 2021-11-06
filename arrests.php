@@ -45,7 +45,7 @@ error_reporting(E_ALL);
                 <?php foreach($charges as $key => $charge) :?>
                 <tr>
                     <td><?php echo $charge['charge'] ?></td>
-                    <td><?php echo $incident['charge_count'] ?></td>
+                    <td><?php echo $charge['charge_count'] ?></td>
                 </tr>
             <?php endforeach;?>
             </tbody>
