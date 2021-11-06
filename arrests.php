@@ -62,7 +62,7 @@ error_reporting(E_ALL);
 
 
 <?php
-      include("chart.php");  
+      include("arrests_chart.php");  
 ?>
 
 </body>
