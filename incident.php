@@ -30,6 +30,7 @@ class Incident {
 	}
 
 	public function getTopCharges() {
+		$sql = "select * from get_top_charges();";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
 		$data = pg_fetch_all($queryRecords);
 		return $data;
