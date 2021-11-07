@@ -2,7 +2,7 @@
     $newObj = new Incident();
     $charges = $newObj->getTopCharges();
     $temp_charge = "";
-    $temp_charge_coun = "";
+    $temp_charge_count = "";
 
 	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
@@ -24,13 +24,13 @@ var ctx = document.getElementById('myChart');
         type: 'bar',
         data: {
             labels: [
-                    <?php echo $temp_charge ?>
+                <?php echo $temp_charge ?>
 	        ],
             datasets: [{
 		label: 'Arrest Analysis',
-                data: [
-		<?php echo $temp_charge_count ?>
-		],
+            data: [
+		        <?php echo $temp_charge_count ?>
+		    ]   ,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
