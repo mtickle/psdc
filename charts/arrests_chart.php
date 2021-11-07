@@ -1,8 +1,4 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-
     $newObj = new Incident();
     $charges = $newObj->getTopCharges();
     $temp_charge = "";
@@ -11,23 +7,13 @@
 	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
 	foreach($charges as $key => $charge) :
-                $temp_charge .= "'". $charge['charge'] . "',";
-                $temp_charge_count .= "'". $charge['charge_count'] . "',";
-        endforeach;
-        $temp_charge = rtrim($temp_charge, ',');
-        $temp_charge_count = rtrim($temp_charge_count, ',');
+            $temp_charge .= "'". $charge['charge'] . "',";
+            $temp_charge_count .= "'". $charge['charge_count'] . "',";
+    endforeach;
+    $temp_charge = rtrim($temp_charge, ',');
+    $temp_charge_count = rtrim($temp_charge_count, ',');
 	//-------------------------------------------------------------
-
-	// //-------------------------------------------------------------
-	// //--- Build out the array for the record counts
-	// foreach($charges as $key => $charge) :
-    //     $temp_charge_count .= "'". $crime['charge_count'] . "',";
-    // endforeach;
-    // $temp_charge_count = rtrim($temp_charge_count, ',');
-    // //-------------------------------------------------------------
 	
-
-
 ?>
 
 
@@ -38,27 +24,12 @@ var ctx = document.getElementById('myChart');
         type: 'bar',
         data: {
             labels: [
-
-                
                     <?php echo $temp_charge ?>
-
-		// 'Red'
-		// , 'Blue'
-		// , 'Yellow'
-		// , 'Green'
-		// , 'Purple'
-		// , 'Orange'
-		],
+	        ],
             datasets: [{
 		label: 'Arrest Analysis',
                 data: [
 		<?php echo $temp_charge_count ?>
-		//12
-		//, 19
-		//, 3
-		//, 5
-		//, 2
-		//, 3
 		],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
