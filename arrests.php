@@ -9,7 +9,7 @@
   <div class="container-lg pb-3">
     <div class="d-grid gap-3" style="grid-template-columns: 1fr 1fr;">
       <div class="bg-light border rounded-3">
-            <div class="chart-container" style="height:400px; width:800px">
+            <div class="chart-container" >
                 <canvas id="myChart"></canvas>
             </div>      
       </div>
