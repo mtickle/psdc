@@ -4,42 +4,27 @@
     error_reporting(E_ALL);
 
     $newObj = new Incident();
-    $crimes = $newObj->getCrimeTypeStats();
     $charges = $newObj->getTopCharges();
-    $temp_crime_code = "";
-    $temp_crime_description = "";
-    $temp_crime_count = "";
     $temp_charge = "";
     $temp_charge_coun = "";
 
 	//-------------------------------------------------------------
-	//--- build out the array for the crime code
-  	foreach($crimes as $key => $crime) :
-		$temp_crime_code .= "'". $crime['crime_code'] . "',";
-	endforeach;
-	$temp_crime_code = rtrim($temp_crime_code, ',');
-	//-------------------------------------------------------------
-
-
-	 //-------------------------------------------------------------
-        //--- build out the array for the crime code
-        foreach($crimes as $key => $crime) :
-                $temp_crime_description .= "'". $crime['crime_description'] . "',";
-        endforeach;
-        $temp_crime_description = rtrim($temp_crime_description, ',');
-        //-------------------------------------------------------------
-
-
-
-	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
-	foreach($crimes as $key => $crime) :
-                $temp_crime_count .= "'". $crime['crime_count'] . "',";
+	foreach($charges as $key => $charge) :
+                $temp_charge .= "'". $charge['charge'] . "',";
+                $temp_charge_count .= "'". $charge['charge_count'] . "',";
         endforeach;
-        $temp_crime_count = rtrim($temp_crime_count, ',');
+        $temp_charge = rtrim($temp_charge, ',');
+        $temp_charge_count = rtrim($temp_charge_count, ',');
 	//-------------------------------------------------------------
 
-
+	// //-------------------------------------------------------------
+	// //--- Build out the array for the record counts
+	// foreach($charges as $key => $charge) :
+    //     $temp_charge_count .= "'". $crime['charge_count'] . "',";
+    // endforeach;
+    // $temp_charge_count = rtrim($temp_charge_count, ',');
+    // //-------------------------------------------------------------
 	
 
 
@@ -55,7 +40,7 @@ var ctx = document.getElementById('myChart');
             labels: [
 
                 
-                    <?php echo $temp_crime_description ?>
+                    <?php echo $temp_charge ?>
 
 		// 'Red'
 		// , 'Blue'
@@ -65,9 +50,9 @@ var ctx = document.getElementById('myChart');
 		// , 'Orange'
 		],
             datasets: [{
-		label: 'RPD Incident Analysis',
+		label: 'Arrest Analysis',
                 data: [
-		<?php echo $temp_crime_count ?>
+		<?php echo $temp_charge_count ?>
 		//12
 		//, 19
 		//, 3
