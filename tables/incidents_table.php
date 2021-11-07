@@ -1,8 +1,8 @@
 
 <?php
 include("classes/incident.php");
-$newObj = new Incident();
-$incidents = $newObj->getIncidents();
+$objIncident = new Incident();
+$incidents = $objIncident->getIncidents();
 ?>
 
 <table id="incidents_grid" class="table" width="100%" cellspacing="0">

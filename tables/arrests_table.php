@@ -1,8 +1,8 @@
     
-    <?php
-    include("classes/incident.php");
-    $newObj = new Incident();
-    $charges = $newObj->getTopCharges();
+<?php
+include("classes/incident.php");
+$objIncident = new Incident();
+$charges = $objIncident->getTopCharges();
 ?>
     
     <table id="charge_grid" class="table" width="100%" cellspacing="0">
