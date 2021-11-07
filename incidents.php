@@ -38,6 +38,6 @@
 
 
 <?php
-      include("charts/incidents_chart.php");
+      include("assets/incidents_chart.php");
       include("includes/footer.php")  
 ?>
