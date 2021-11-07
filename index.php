@@ -1,6 +1,6 @@
 
 
-<?php include 'header.php';?>
+<?php include 'includes/header.php';?>
 
 
   <div class="container-lg pb-3">
@@ -15,6 +15,6 @@
   </div>
 
 
-  <?php include 'footer.php';?>
+  <?php include 'includes/footer.php';?>
 
 

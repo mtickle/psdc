@@ -26,7 +26,8 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="incidents.php" class="nav-link active" aria-current="page">Incidents</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="incidents.php" class="nav-link" aria-current="page">Incidents</a></li>
         <li class="nav-item"><a href="arrests.php" class="nav-link">Arrests</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul>

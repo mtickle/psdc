@@ -1,9 +1,9 @@
 
 <?php
-    include("incident.php");
+    include("classes/incident.php");
     $newObj = new Incident();
     $charges = $newObj->getTopCharges();
-    include 'header.php';
+    include 'includes/header.php';
 ?>
 
 
@@ -38,6 +38,6 @@
 
 
 <?php
-      include("arrests_chart.php");  
-      include("footer.php")
+      include("charts/arrests_chart.php");  
+      include("includes/footer.php")
 ?>

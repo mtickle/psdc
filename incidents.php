@@ -3,7 +3,7 @@
    include("classes/incident.php");
     $newObj = new Incident();
     $incidents = $newObj->getIncidents();
-    include 'header.php';
+    include 'includes/header.php';
 ?>
 
 <div class="container">
@@ -13,7 +13,7 @@
         </div>
      
 
-  <table id="incidents_grid" class="table" width="100%" cellspacing="0">
+  	<table id="incidents_grid" class="table" width="100%" cellspacing="0">
             <thead>
                 <tr>
                     <th>Date</th>
@@ -35,7 +35,6 @@
         </table>
    
       </div>
-
 
 
 <?php
