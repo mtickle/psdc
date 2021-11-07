@@ -1,6 +1,6 @@
 
 <?php
-    include("incident.php");
+    include("classes/incident.php");
     $newObj = new Incident();
     $incidents = $newObj->getIncidents();
 
@@ -67,7 +67,7 @@ error_reporting(E_ALL);
 
 
 <?php
-      include("chart.php");  
+      include("charts/chart.php");  
 ?>
 
 </body>
