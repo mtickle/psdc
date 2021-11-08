@@ -11,7 +11,6 @@ $incidents = $objIncident->getIncidents();
                     <th>Date</th>
                     <th>Description</th>
                     <th>Address</th>
-                    <th>District</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,7 +19,6 @@ $incidents = $objIncident->getIncidents();
                     <td><?php echo $incident['reported_date'] ?></td>
                     <td><?php echo $incident['crime_description'] ?></td>
                     <td><?php echo $incident['reported_block_address'] ?></td>
-                    <td><?php echo $incident['district'] ?></td>
                 </tr>
             <?php endforeach;?>
             </tbody>
