@@ -1,19 +1,16 @@
-
 <?php include 'includes/header.php'; ?>
 
-  <div class="container-lg pb-3">
-    <div class="d-grid gap-3" style="grid-template-columns: 1fr 1fr;">
-      
-        <div class="bg-light border rounded-3">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
             <?php include("includes/chart_container.php"); ?>
         </div>
-      
-      <div class="bg-light border rounded-3">
-        <?php include("tables/arrests_table.php"); ?>     
-      </div>
-
+        <div class="col-sm-6">
+            <?php include("tables/arrests_table.php"); ?>
+        </div>
     </div>
-  </div>
+</div>
 
 <?php
       include("charts/arrests_chart.php");  
