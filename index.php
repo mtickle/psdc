@@ -1,9 +1,9 @@
 <?php include 'includes/header.php';?>
 
 
-<div class="container-lg pb-3">
-    <div class="d-grid gap-3" style="grid-template-columns: 1fr 1fr;">
-        <div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
                     Raleigh Police Department
@@ -18,19 +18,18 @@
             </div>
         </div>
 
-        <div>
+        <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
                     Wake County CCBI
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Arrest Data</h5>
-                    <p class="card-text">City-County Bureau of Investigation anonymized arrest data for the past 30 days.</p>
+                    <p class="card-text">City-County Bureau of Investigation anonymized arrest data for the past 30
+                        days.</p>
                     <a href="arrests.php" class="btn btn-primary">View Arrests</a>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
