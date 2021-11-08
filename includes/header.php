@@ -3,18 +3,19 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     $page = basename($_SERVER['PHP_SELF']);
-    $active = "";
+    $index_active = "";
+    $incidents_active = "";
+    $arrests_active = "";
+    $about_active = "";	
 
     if ($page == "index.php"):
-      $active = "active";
+      $index_active = "active";
     elseif ($page == "incidents.php"):
-      $active = "active";
-    elseif ($page == "arrests.php"):
-      $active = "active";
+      $incidents_active = "active";
+   elseif ($page == "arrests.php"):
+     $arrests_active = "active";
     elseif ($page == "about.php"):
-      $active = "active";
-    else:
-      $active = "";
+      $about_active = "active";
     endif;
 
 ?>
@@ -38,6 +39,36 @@
 <body>
     <main>
 
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Local Public Safety Data</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+
+
+
+ <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="index.php" class="nav-link <?php echo $index_active;?>">Home</a></li>
+                    <li class="nav-item"><a href="incidents.php" class="nav-link <?php echo $incidents_active;?>">Incidents</a></li>
+                    <li class="nav-item"><a href="arrests.php" class="nav-link <?php echo $arrests_active;?>">Arrests</a></li>
+                    <li class="nav-item"><a href="about.php" class="nav-link <?php echo $about_active;?>">About</a></li>
+                </ul>
+
+
+
+     
+    </div>
+  </div>
+</nav>
+
+
+
+
+
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -48,13 +79,10 @@
                 </a>
 
                 <ul class="nav nav-pills">
-
-
-
-                    <li class="nav-item"><a href="index.php" class="nav-link <?php echo $active;}?>">Home</a></li>
-                    <li class="nav-item"><a href="incidents.php" class="nav-link <?php echo $active;}?>">Incidents</a></li>
-                    <li class="nav-item"><a href="arrests.php" class="nav-link <?php echo $active;}?>">Arrests</a></li>
-                    <li class="nav-item"><a href="about.php" class="nav-link <?php echo $active;}?>">About</a></li>
+                    <li class="nav-item"><a href="index.php" class="nav-link <?php echo $index_active;?>">Home</a></li>
+                    <li class="nav-item"><a href="incidents.php" class="nav-link <?php echo $incidents_active;?>">Incidents</a></li>
+                    <li class="nav-item"><a href="arrests.php" class="nav-link <?php echo $arrests_active;?>">Arrests</a></li>
+                    <li class="nav-item"><a href="about.php" class="nav-link <?php echo $about_active;?>">About</a></li>
                 </ul>
             </header>
         </div>
