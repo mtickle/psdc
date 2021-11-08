@@ -2,6 +2,7 @@
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
+    $page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <html lang="en">
@@ -24,10 +25,13 @@
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-4">Simple header</span>
+        <span class="fs-4">Local Public Safety Data Analysis</span>
       </a>
 
       <ul class="nav nav-pills">
+
+
+
         <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="incidents.php" class="nav-link" aria-current="page">Incidents</a></li>
         <li class="nav-item"><a href="arrests.php" class="nav-link">Arrests</a></li>
@@ -35,3 +39,5 @@
       </ul>
     </header>
   </div>
+
+  <?php if($page=='incidents.php'){echo 'active';}?>
