@@ -12,8 +12,10 @@
     <title>Raleigh/Wake LE Data</title>
 
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     </head>
   <body>
       <main>
@@ -26,7 +28,8 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="incidents.php" class="nav-link active" aria-current="page">Incidents</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="incidents.php" class="nav-link" aria-current="page">Incidents</a></li>
         <li class="nav-item"><a href="arrests.php" class="nav-link">Arrests</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul>

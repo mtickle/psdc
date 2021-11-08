@@ -1,43 +1,21 @@
 
-<?php
-    include("incident.php");
-    $newObj = new Incident();
-    $charges = $newObj->getTopCharges();
-    include 'header.php';
-?>
+<?php include 'includes/header.php'; ?>
 
-
-  <div class="container">
-
-
-<div class="chart-container" style="height:400px; width:800px">
-    <canvas id="myChart"></canvas>
-</div>
+  <div class="container-lg pb-3">
+    <div class="d-grid gap-3" style="grid-template-columns: 1fr 1fr;">
       
-
-  <table id="charge_grid" class="table" width="100%" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Charge</th>
-                    <th>Count</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($charges as $key => $charge) :?>
-                <tr>
-                    <td><?php echo $charge['charge'] ?></td>
-                    <td><?php echo $charge['charge_count'] ?></td>
-                </tr>
-            <?php endforeach;?>
-            </tbody>
-        </table>
-
+        <div class="bg-light border rounded-3">
+            <?php include("includes/chart_container.php"); ?>
+        </div>
+      
+      <div class="bg-light border rounded-3">
+        <?php include("tables/arrests_table.php"); ?>     
       </div>
 
-
-
+    </div>
+  </div>
 
 <?php
-      include("arrests_chart.php");  
-      include("footer.php")
+      include("charts/arrests_chart.php");  
+      include("includes/footer.php")
 ?>
