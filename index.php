@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
         <div class="card">
                 <div class="card-header">
                     Recent 911 Calls
@@ -18,7 +18,7 @@
 	<br/>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-4">
 
 
         <div class="card">
