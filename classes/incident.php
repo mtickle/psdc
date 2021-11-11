@@ -32,6 +32,13 @@ class Incident {
 		return $data;
 	}
 
+	public function getRecentCalls() {
+		$sql = "select * from get_recent_calls();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
 }
 
 ?>
