@@ -14,6 +14,8 @@
       $incidents_active = "active";
    elseif ($page == "arrests.php"):
      $arrests_active = "active";
+     elseif ($page == "callss.php"):
+        $calls_active = "active"; 
     elseif ($page == "about.php"):
       $about_active = "active";
     endif;
@@ -50,14 +52,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarsExample07">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.php" class="nav-link <?php echo $index_active;?>">Home</a>
-                        </li>
-                        <li class="nav-item"><a href="incidents.php"
-                                class="nav-link <?php echo $incidents_active;?>">Incidents</a></li>
-                        <li class="nav-item"><a href="arrests.php"
-                                class="nav-link <?php echo $arrests_active;?>">Arrests</a></li>
-                        <li class="nav-item"><a href="about.php" class="nav-link <?php echo $about_active;?>">About</a>
-                        </li>
+                        <li class="nav-item"><a href="index.php" class="nav-link <?php echo $index_active;?>">Home</a></li>
+                        <li class="nav-item"><a href="incidents.php" class="nav-link <?php echo $incidents_active;?>">Incidents</a></li>
+                        <li class="nav-item"><a href="arrests.php" class="nav-link <?php echo $arrests_active;?>">Arrests</a></li>
+                                <li class="nav-item"><a href="calls.php" class="nav-link <?php echo $calls_active;?>">Calls</a></li>
+                                <li class="nav-item"><a href="about.php" class="nav-link <?php echo $about_active;?>">About</a></li>
                     </ul>
                     <form>
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search">
