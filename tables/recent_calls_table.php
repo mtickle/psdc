@@ -10,6 +10,8 @@ $calls = $objIncident->getRecentCalls();
             <tr>
                 <th>Agency</th>
                 <th>Incident</th>
+		<th>Location</th>
+		<th>Date Time</th>
             </tr>
         </thead>
         <tbody>
@@ -17,7 +19,10 @@ $calls = $objIncident->getRecentCalls();
             <tr>
                 <td><?php echo $call['agency'] ?></td>
                 <td><?php echo $call['incident'] ?></td>
-            </tr>
+		 <td><?php echo $call['location'] ?></td>
+		<td><?php echo $call['call_date'] ?> <?php echo $call['call_time'] ?></td>
+
+	</tr>
         <?php endforeach;?>
         </tbody>
     </table>
