@@ -1,8 +1,11 @@
 
+<style>
+#map { 
+    height: 380px; 
+    width: 900px;
+  }
 
-
-
-
+</style>
 
 <div id="map"></div>
 
