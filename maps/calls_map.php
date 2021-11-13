@@ -29,7 +29,7 @@ $calls = $objIncident->getRecentCalls();
  }).addTo(mymap);
 
  <?php foreach($calls as $key => $call) :?>
-    L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitiude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['incident'] ?>").openPopup();
+    L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['incident'] ?>").openPopup();
    <?php endforeach;?>
 
 //  L.marker([35.748218, -78.875430]).addTo(mymap)
