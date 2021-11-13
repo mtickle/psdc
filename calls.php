@@ -9,10 +9,7 @@
                     Calls Map
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">911 Calls Map</h5>
-                    
                     <?php include("maps/calls_map.php"); ?>
-                    
                 </div>
             </div>
 	<br/>
@@ -29,10 +26,7 @@
                     Recent 911 Calls
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Recent 911 Calls</h5>
-                    
                     <?php include("tables/recent_calls_table.php"); ?>
-                    
                 </div>
             </div>
 	<br/>

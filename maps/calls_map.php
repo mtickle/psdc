@@ -1,6 +1,6 @@
 
 <?php
-include("classes/incident.php");
+include_once("classes/incident.php");
 $objIncident = new Incident();
 $calls = $objIncident->getRecentCalls();
 ?>
