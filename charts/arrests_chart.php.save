@@ -1,5 +1,4 @@
 <?php
-   
     $newObj = new Incident();
     $charges = $newObj->getTopCharges();
     $temp_charge = "";
@@ -20,8 +19,7 @@
 
 <script>
 
-var ctx = document.getElementById('ArrestsByChargeChart');
-    
+var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -29,10 +27,13 @@ var ctx = document.getElementById('ArrestsByChargeChart');
                 <?php echo $temp_charge ?>
 	        ],
             datasets: [{
-		label: 'Arrest Analysis',
-        data: [<?php echo $temp_charge_count ?>],
-                backgroundColor: ['lightblue'],
-                borderColor: ['black'],
+		label: 'Arrests',
+            data: [ <?php echo $temp_charge_count ?> ]   ,
+            backgroundColor: 'lightgrey'
+                ],
+                borderColor: [
+                    'black'
+                ],
                 borderWidth: 1
             }]
         },
