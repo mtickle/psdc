@@ -26,7 +26,7 @@ var ctx = document.getElementById('IncidentsByDistrict');
             labels: [<?php echo $temp_charge ?>],
             datasets: [{label: 'District',
             data: [<?php echo $temp_charge_count ?>],
-                backgroundColor: ['lightblue','lightgreen','lightpurple'],
+                backgroundColor: ['pink','lightblue','lightgreen','Lavender','AntiqueWhite','Gainsboro'],
                 borderColor: ['black'],
                 borderWidth: 1
             }]
