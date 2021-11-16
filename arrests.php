@@ -10,11 +10,11 @@
                     Analysis
                 </div>
                 <div class="card-body">
-
+			<h5>Arrests By Charges</h5>
                     <div class="chart-container" >
                         <canvas id="ArrestsByChargeChart"></canvas>
                     </div>  
-
+			<h5>Arrests By Gender</h5>
                     <div class="chart-container" >
                         <canvas id="ArrestsByGenderChart"></canvas>
                     </div>   
