@@ -8,7 +8,14 @@
                     Analysis
                 </div>
                 <div class="card-body">
-                    <?php include("includes/chart_container.php"); ?>
+                <h5>Arrests By Charges</h5>
+                    <div class="chart-container" >
+                        <canvas id="IncidentAnalysis"></canvas>
+                    </div>  
+			    <h5>Arrests By Gender</h5>
+                    <div class="chart-container" >
+                        <canvas id="IncidentsByDistrict"></canvas>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -28,5 +35,6 @@
 
 <?php
       include("charts/incidents_chart.php");
+      include("charts/incidents_by_district_chart.php");
       include("includes/footer.php")  
 ?>

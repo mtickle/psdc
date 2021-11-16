@@ -26,7 +26,7 @@
 
 <script>
 
-var ctx = document.getElementById('myChart');
+var ctx = document.getElementById('IncidentAnalysis');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
