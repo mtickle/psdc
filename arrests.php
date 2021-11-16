@@ -10,7 +10,15 @@
                     Analysis
                 </div>
                 <div class="card-body">
-                    <?php include("includes/chart_container.php"); ?>
+
+                    <div class="chart-container" >
+                        <canvas id="ArrestsByChargeChart"></canvas>
+                    </div>  
+
+                    <div class="chart-container" >
+                        <canvas id="ArrestsByGenderChart"></canvas>
+                    </div>   
+
                 </div>
             </div>
 
@@ -30,6 +38,7 @@
 </div>
 
 <?php
-      include("charts/arrests_chart.php");  
+      include("charts/arrests_chart.php"); 
+      include("charts/arrests_by_gender_chart.php");  
       include("includes/footer.php")
 ?>

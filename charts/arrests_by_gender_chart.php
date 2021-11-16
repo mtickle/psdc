@@ -1,6 +1,6 @@
 <?php
     $newObj = new Incident();
-    $charges = $newObj->getTopCharges();
+    $charges = $newObj->getArrestsByGender();
     $temp_charge = "";
     $temp_charge_count = "";
 
@@ -19,14 +19,14 @@
 
 <script>
 
-var ctx = document.getElementById('myChart');
+var ctx = document.getElementById('ArrestsByGenderChart');
     var myChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'pie',
         data: {
             labels: [<?php echo $temp_charge ?>],
-            datasets: [{label: 'Arrest Analysis',
+            datasets: [{label: 'Arrest Gender',
             data: [<?php echo $temp_charge_count ?>],
-                backgroundColor: ['lightgrey'],
+                backgroundColor: ['lightblue','lightgreen'],
                 borderColor: ['black'],
                 borderWidth: 1
             }]
