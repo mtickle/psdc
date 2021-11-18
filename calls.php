@@ -2,7 +2,7 @@
 
 
 <div class="container">
-<div class="row">
+<!-- div class="row">
         <div class="col-sm-9">
         <div class="card">
                 <div class="card-header">
@@ -18,18 +18,10 @@
         <div class="col-sm-3">
 
         </div>
-    </div>    
+    </div-->    
 <div class="row">
         <div class="col-sm-9">
-        <div class="card">
-                <div class="card-header">
-                    Recent 911 Calls
-                </div>
-                <div class="card-body">
-                    <?php include("tables/recent_calls_cards.php"); ?>
-                </div>
-            </div>
-	<br/>
+             <?php include("tables/recent_calls_cards.php"); ?>
         </div>
 
         <div class="col-sm-3">

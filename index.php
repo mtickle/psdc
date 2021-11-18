@@ -9,8 +9,7 @@
                     Recent 911 Calls
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Recent 911 Calls</h5>
-                    
+                    <?php include("maps/calls_map.php"); ?>
                     <?php include("tables/recent_calls_table.php"); ?>
                     
                 </div>
