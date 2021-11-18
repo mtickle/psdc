@@ -7,22 +7,28 @@
         <div class="col-sm-4">
         <div class="card">
                 <div class="card-header">
-                    Analysis
+                    Arrests by Charges
                 </div>
                 <div class="card-body">
-                    <h5>Arrests By Charges</h5>
                     <div class="chart-container">
                         <canvas id="ArrestsByChargeChart"></canvas>
                     </div>
-                    <h5>Arrests By Gender</h5>
+                 </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="card">
+                <div class="card-header">
+                    Arrests by arrests_by_gender_chart
+                </div>
+                <div class="card-body">
                     <div class="chart-container">
                         <canvas id="ArrestsByGenderChart"></canvas>
                     </div>
-
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">hey</div>
+        </div>
         <div class="col-sm-4">hey</div>
     </div>
 
