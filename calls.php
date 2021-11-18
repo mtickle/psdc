@@ -26,7 +26,7 @@
                     Recent 911 Calls
                 </div>
                 <div class="card-body">
-                    <?php include("tables/recent_calls_table.php"); ?>
+                    <?php include("tables/recent_calls_cards.php"); ?>
                 </div>
             </div>
 	<br/>
