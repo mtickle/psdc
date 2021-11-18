@@ -19,7 +19,7 @@
         <div class="col-sm-4">
         <div class="card">
                 <div class="card-header">
-                    Arrests by arrests_by_gender_chart
+                    Arrests by Gender
                 </div>
                 <div class="card-body">
                     <div class="chart-container">
@@ -29,18 +29,7 @@
             </div>
         </div>
         </div>
-        <div class="col-sm-4">hey</div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-6">
-
-            
-
-
-        </div>
-        <div class="col-sm-6">
-            <div class="card">
+        <div class="col-sm-4"><div class="card">
                 <div class="card-header">
                     Data
                 </div>
@@ -51,7 +40,6 @@
         </div>
     </div>
 </div>
-
 <?php
       include("charts/arrests_chart.php"); 
       include("charts/arrests_by_gender_chart.php");  
