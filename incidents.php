@@ -7,7 +7,6 @@
                     Analysis
                 </div>
                 <div class="card-body">
-                    <h5>Incidents By Charges</h5>
                     <div class="chart-container">
                         <canvas id="IncidentAnalysis"></canvas>
                     </div>
@@ -18,10 +17,9 @@
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
-                    Analysis
+                Incidents By District
                 </div>
                 <div class="card-body">
-                    <h5>Incidents By District</h5>
                     <div class="chart-container">
                         <canvas id="IncidentsByDistrict"></canvas>
                     </div>
