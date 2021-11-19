@@ -4,7 +4,7 @@
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
-                    Analysis
+                    Incidents
                 </div>
                 <div class="card-body">
                     <div class="chart-container">
@@ -27,6 +27,7 @@
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="col-sm-12">
             <div class="card">

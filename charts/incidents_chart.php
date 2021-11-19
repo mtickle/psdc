@@ -12,9 +12,9 @@
   	foreach($crimes as $key => $crime) :
         $temp_crime_description .= "'". $crime['crime_description'] . "',";
         $temp_crime_count .= "'". $crime['crime_count'] . "',";
-    endforeach;
-    $temp_crime_description = rtrim($temp_crime_description, ',');
-    $temp_crime_count = rtrim($temp_crime_count, ',');
+    	endforeach;
+    	$temp_crime_description = rtrim($temp_crime_description, ',');
+   	 $temp_crime_count = rtrim($temp_crime_count, ',');
 	//-------------------------------------------------------------
 
 ?>
@@ -29,8 +29,7 @@
         type: 'bar',
         data: {
             labels: [<?php echo $temp_crime_description ?>],
-            datasets: [{
-		        label: 'Incidents',
+            datasets: [{label: 'Incidents',
                 data: [<?php echo $temp_crime_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
