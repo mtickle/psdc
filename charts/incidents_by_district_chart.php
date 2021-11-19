@@ -20,7 +20,6 @@
 <script>
 
 var ctxDistricts = document.getElementById('IncidentsByDistrict');
-
 ctxDistricts.height = 350
 
     var DistrictsChart = new Chart(ctxDistricts, {
@@ -28,16 +27,15 @@ ctxDistricts.height = 350
         data: {
             labels: [<?php echo $temp_charge ?>],
             datasets: [{label: 'District',
-            data: [<?php echo $temp_charge_count ?>],
+                data: [<?php echo $temp_charge_count ?>],
                 backgroundColor: ['pink','lightblue','lightgreen','Lavender','AntiqueWhite','Gainsboro'],
-                borderColor: ['black'],
                 borderWidth: 1
             }]
         },
         options: {
-     	responsive: true,
-	maintainAspectRatio: true,
-	indexAxis: 'y'
+     	    responsive: true,
+	        maintainAspectRatio: false,
+	        indexAxis: 'y'
             }
         
     });

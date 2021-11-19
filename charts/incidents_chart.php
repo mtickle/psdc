@@ -27,30 +27,25 @@
 <script>
 
 var ctxIncidents = document.getElementById('IncidentAnalysis');
-
 ctxIncidents.height = 350
-
+Chart.defaults.font.size=12;
 
     var IncidentsChart = new Chart(ctxIncidents, {
         type: 'bar',
         data: {
-            labels: [
-                    <?php echo $temp_crime_description ?>
-		],
-                datasets: [{
-		label: 'Incidents',
-                data: [
-		<?php echo $temp_crime_count ?>
-		],
+            labels: [<?php echo $temp_crime_description ?>],
+            datasets: [{
+		        label: 'Incidents',
+                data: [<?php echo $temp_crime_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
                 borderWidth: 1
             }]
         },
         options: {
-	responsive: true,
-	matainAspectRatio: false,
-	indexAxis: 'y',
+	        responsive: true,
+	        matainAspectRatio: false,
+	        indexAxis: 'y',
             scales: {
                 y: {
                     beginAtZero: true

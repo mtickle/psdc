@@ -28,11 +28,9 @@
     var ChargesChart = new Chart(ctxCharges, {
         type: 'bar',
         data: {
-            labels: [
-                <?php echo $temp_charge ?>
-	        ],
+            labels: [<?php echo $temp_charge ?>],
             datasets: [{
-		label: 'Number of Arrests',
+		        label: 'Number of Arrests',
                 data: [<?php echo $temp_charge_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
@@ -40,14 +38,14 @@
             }]
         },
         options: {
-         responsive: true,
-	maintainAspectRatio: false,
-	indexAxis: 'y',
-            scales: {
-                y: {
-                    beginAtZero: true
+            responsive: true,
+	        maintainAspectRatio: false,
+	        indexAxis: 'y',
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
-            }
         }
     });
 
