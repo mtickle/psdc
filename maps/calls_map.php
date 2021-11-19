@@ -28,6 +28,7 @@ $calls = $objIncident->getRecentCalls();
    zoomOffset: -1
  }).addTo(mymap);
 
+
  <?php foreach($calls as $key => $call) :?>
     L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['incident'] ?>").openPopup();
   <?php endforeach;?>

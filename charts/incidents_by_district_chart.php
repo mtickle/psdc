@@ -19,8 +19,11 @@
 
 <script>
 
-var ctx = document.getElementById('IncidentsByDistrict');
-    var myChart = new Chart(ctx, {
+var ctxDistricts = document.getElementById('IncidentsByDistrict');
+
+ctxDistricts.height = 350
+
+    var DistrictsChart = new Chart(ctxDistricts, {
         type: 'pie',
         data: {
             labels: [<?php echo $temp_charge ?>],
@@ -32,13 +35,11 @@ var ctx = document.getElementById('IncidentsByDistrict');
             }]
         },
         options: {
-	indexAxis: 'y',
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+     	responsive: true,
+	maintainAspectRatio: true,
+	indexAxis: 'y'
             }
-        }
+        
     });
 </script>
 

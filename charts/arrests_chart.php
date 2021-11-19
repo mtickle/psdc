@@ -20,23 +20,28 @@
 
 <script>
 
-var ctx = document.getElementById('ArrestsByChargeChart');
-    
-    var myChart = new Chart(ctx, {
+    var ctxCharges = document.getElementById('ArrestsByChargeChart');
+
+    ctxCharges.height = 350
+    Chart.defaults.font.size=12;
+
+    var ChargesChart = new Chart(ctxCharges, {
         type: 'bar',
         data: {
             labels: [
                 <?php echo $temp_charge ?>
 	        ],
             datasets: [{
-		label: 'Arrest Analysis',
-        data: [<?php echo $temp_charge_count ?>],
+		label: 'Number of Arrests',
+                data: [<?php echo $temp_charge_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
                 borderWidth: 1
             }]
         },
         options: {
+         responsive: true,
+	maintainAspectRatio: false,
 	indexAxis: 'y',
             scales: {
                 y: {
@@ -46,6 +51,7 @@ var ctx = document.getElementById('ArrestsByChargeChart');
         }
     });
 
+    
 </script>
 
 

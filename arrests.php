@@ -1,17 +1,5 @@
 <?php include 'includes/header.php'; ?>
 
-<style>
-
-.ArrestsByChargeChart { 
-    height: 280px; 
-    width: 100%;
-  }
-
-  .ArrestsByGenderChart { 
-    height: 280px; 
-    width: 100%;
-  }
-</style>
 
 <div class="container">
 
