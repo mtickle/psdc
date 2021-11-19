@@ -20,9 +20,10 @@
 
 
 <script>
-var ctxCharges = document.getElementById('ArrestsByChargeChart');
-ctxCharges.height = 350
-Chart.defaults.font.size = 12;
+
+    var ctxCharges = document.getElementById('ArrestsByChargeChart');
+    ctxCharges.height = 350
+    Chart.defaults.font.size = 12;
 
 var ChargesChart = new Chart(ctxCharges, {
     type: 'bar',

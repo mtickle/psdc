@@ -29,7 +29,8 @@
         type: 'bar',
         data: {
             labels: [<?php echo $temp_crime_description ?>],
-            datasets: [{label: 'Incidents',
+            datasets: [{
+                label: 'Incidents',
                 data: [<?php echo $temp_crime_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
