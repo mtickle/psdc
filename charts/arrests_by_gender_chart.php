@@ -26,13 +26,14 @@ var ctx = document.getElementById('ArrestsByGenderChart');
             labels: [<?php echo $temp_charge ?>],
             datasets: [{label: 'Arrest Gender',
             data: [<?php echo $temp_charge_count ?>],
-                backgroundColor: ['lightblue','lightgreen'],
-                borderColor: ['black'],
-                borderWidth: 1
+            backgroundColor: ['lightblue','lightgreen'],
+            borderColor: ['black'],
+            borderWidth: 1
             }]
         },
         options: {
-	indexAxis: 'y',
+            responsive: true
+	        indexAxis: 'y',
             scales: {
                 y: {
                     beginAtZero: true
