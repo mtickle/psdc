@@ -54,6 +54,20 @@ class Incident {
 		return $data;
 	}
 	
+	public function getTopCalls() {
+		$sql = "select * from get_top_calls();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
+	public function getTopCallAgencies() {
+		$sql = "select * from get_top_call_agencies();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+	
 
 }
 
