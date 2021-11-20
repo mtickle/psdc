@@ -29,6 +29,7 @@ ctxDistricts.height = 350
             datasets: [{label: 'District',
                 data: [<?php echo $temp_charge_count ?>],
                 backgroundColor: ['pink','lightblue','lightgreen','Lavender','AntiqueWhite','Gainsboro'],
+                borderColor: ['black'],
                 borderWidth: 1
             }]
         },

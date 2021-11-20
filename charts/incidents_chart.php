@@ -22,7 +22,7 @@
 <script>
 
     var ctxIncidents = document.getElementById('IncidentAnalysis');
-    ctxIncidents.height = 350
+    ctxIncidents.height = 300
     Chart.defaults.font.size=12;
 
     var IncidentsChart = new Chart(ctxIncidents, {
