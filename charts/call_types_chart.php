@@ -10,8 +10,8 @@
 	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
 	foreach($charges as $key => $charge) :
-            $temp_charge .= "'". $charge['charge'] . "',";
-            $temp_charge_count .= "'". $charge['charge_count'] . "',";
+            $temp_charge .= "'". $charge['incident'] . "',";
+            $temp_charge_count .= "'". $charge['incident_count'] . "',";
     endforeach;
     $temp_charge = rtrim($temp_charge, ',');
     $temp_charge_count = rtrim($temp_charge_count, ',');
