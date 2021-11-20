@@ -19,8 +19,11 @@
 
 <script>
 
-var ctx = document.getElementById('ArrestsByGenderChart');
-    var myChart = new Chart(ctx, {
+var ctxGender = document.getElementById('ArrestsByGenderChart');
+    ctxGender.height = 350
+    Chart.defaults.font.size = 12;
+
+    var GenderChart = new Chart(ctxGender, {
         type: 'pie',
         data: {
             labels: [<?php echo $temp_charge ?>],
