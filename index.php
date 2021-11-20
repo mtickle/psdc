@@ -1,53 +1,86 @@
-<?php include 'includes/header.php';?>
 
+  
+<?php include 'includes/header.php'; ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col-sm-9">
-        <div class="card">
-                <div class="card-header">
-                    Recent 911 Calls
-                </div>
-                <div class="card-body">
-                    <?php include("maps/calls_map.php"); ?>
-                    <?php include("tables/recent_calls_table.php"); ?>
-                    
-                </div>
-            </div>
-	<br/>
+
+
+    <div class="card">
+        <div class="card-header">
+          Incidents
         </div>
-
-        <div class="col-sm-3">
-
-
-        <div class="card">
-                <div class="card-header">
-                    Raleigh Police Department
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Incident Data</h5>
-                    <p class="card-text">Raleigh Police Department incidents reported yesterday.
-                    </p>
-                    <a href="incidents.php" class="btn btn-primary">View Incidents</a>
-                </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+               <h5 class="card-title">Incidents by Type</h5>
+               <div class="chart-container" >
+                    <canvas id="IncidentAnalysis"></canvas>
+                 </div>  
             </div>
-
-            <br />
-
-            <div class="card">
-                <div class="card-header">
-                    Wake County CCBI
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Arrest Data</h5>
-                    <p class="card-text">City-County Bureau of Investigation anonymized arrest data for the past 30
-                        days.</p>
-                    <a href="arrests.php" class="btn btn-primary">View Arrests</a>
-                </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">Incidents by District</h5>
+                <div class="chart-container" >
+                    <canvas id="IncidentsByDistrict"></canvas>
+                </div> 
             </div>
-        </div>
+            </div>
+        </div>  
     </div>
+
+    <p></p>
+    
+    <div class="card">
+        <div class="card-header">
+          Arrests
+        </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+               <h5 class="card-title">Arrests by Charge</h5>
+               <div class="chart-container">
+               <canvas id="ArrestsByChargeChart"></canvas>
+           </div>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">Arrests by Gender</h5>
+                <div class="chart-container">
+                    <canvas id="ArrestsByGenderChart"></canvas>
+                </div>
+            </div>
+            </div>
+        </div>  
+    </div>
+
+    <p></p>
+    
+    <div class="card">
+        <div class="card-header">
+          Calls for Assistance
+        </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+               <h5 class="card-title">Calls by Type</h5>
+               <div class="chart-container">
+                <canvas id="CallsByTypeChart"></canvas>
+            </div>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">Calls by Agency</h5>
+                <div class="chart-container">
+                    <canvas id="CallsByAgencyChart"></canvas>
+                </div>
+            </div>
+            </div>
+        </div>  
+    </div>
+
 </div>
-
-
-<?php include 'includes/footer.php';?>
+  
+<?php
+      include("charts/arrests_chart.php"); 
+      include("charts/arrests_by_gender_chart.php");  
+      include("charts/incidents_chart.php");
+      include("charts/incidents_by_district_chart.php");
+      include("includes/footer.php")
+?>
