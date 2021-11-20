@@ -33,7 +33,7 @@ var ctx = document.getElementById('ArrestsByGenderChart');
         },
         options: {
             plugins: {
-                legend: { display: true, position: bottom }
+                legend: { display: true }
             },
 	        indexAxis: 'y',
         }
