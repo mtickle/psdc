@@ -12,9 +12,9 @@
   	foreach($crimes as $key => $crime) :
         $temp_crime_description .= "'". $crime['crime_description'] . "',";
         $temp_crime_count .= "'". $crime['crime_count'] . "',";
-    	endforeach;
-    	$temp_crime_description = rtrim($temp_crime_description, ',');
-   	 $temp_crime_count = rtrim($temp_crime_count, ',');
+    endforeach;
+    $temp_crime_description = rtrim($temp_crime_description, ',');
+    $temp_crime_count = rtrim($temp_crime_count, ',');
 	//-------------------------------------------------------------
 
 ?>
@@ -22,7 +22,7 @@
 <script>
 
     var ctxIncidents = document.getElementById('IncidentAnalysis');
-    ctxIncidents.height = 170
+    ctxIncidents.height = 350
     Chart.defaults.font.size=12;
 
     var IncidentsChart = new Chart(ctxIncidents, {
@@ -30,7 +30,7 @@
         data: {
             labels: [<?php echo $temp_crime_description ?>],
             datasets: [{
-                label: 'Incidents',
+		        label: 'Incidents',
                 data: [<?php echo $temp_crime_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
@@ -38,15 +38,15 @@
             }]
         },
         options: {
-	        responsive: true,
+	        responsive: falsey
+,
 	        matainAspectRatio: false,
 	        indexAxis: 'y',
-            	scales: {
-                	y: {
-                    	beginAtZero: true
-                	}
-            
-}
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
         }
     });
 
