@@ -19,26 +19,25 @@
 
 <script>
 
-var ctx = document.getElementById('ArrestsByGenderChart');
-    var myChart = new Chart(ctx, {
+var ctxGender = document.getElementById('ArrestsByGenderChart');
+ctxGender.height =350
+
+var GenderChart = new Chart(ctxGender, {
         type: 'pie',
         data: {
             labels: [<?php echo $temp_charge ?>],
             datasets: [{label: 'Arrest Gender',
             data: [<?php echo $temp_charge_count ?>],
-                backgroundColor: ['lightblue','lightgreen'],
-                borderColor: ['black'],
-                borderWidth: 1
+            backgroundColor: ['lightblue','lightgreen'],
+            borderColor: ['black'],
+            borderWidth: 1
             }]
         },
         options: {
-	indexAxis: 'y',
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+            responsive: true,
+            maintainAspectRatio:false
             }
-        }
+        
     });
 </script>
 

@@ -2,24 +2,34 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
-
             <div class="card">
                 <div class="card-header">
-                    Analysis
+                    Incidents
                 </div>
                 <div class="card-body">
-                <h5>Arrests By Charges</h5>
-                    <div class="chart-container" >
+                    <div class="chart-container">
                         <canvas id="IncidentAnalysis"></canvas>
-                    </div>  
-			    <h5>Arrests By Gender</h5>
-                    <div class="chart-container" >
-                        <canvas id="IncidentsByDistrict"></canvas>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                Incidents By District
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="IncidentsByDistrict"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
                     Data

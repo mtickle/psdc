@@ -19,26 +19,25 @@
 
 <script>
 
-var ctx = document.getElementById('IncidentsByDistrict');
-    var myChart = new Chart(ctx, {
+var ctxDistricts = document.getElementById('IncidentsByDistrict');
+ctxDistricts.height = 350
+
+    var DistrictsChart = new Chart(ctxDistricts, {
         type: 'pie',
         data: {
             labels: [<?php echo $temp_charge ?>],
             datasets: [{label: 'District',
-            data: [<?php echo $temp_charge_count ?>],
+                data: [<?php echo $temp_charge_count ?>],
                 backgroundColor: ['pink','lightblue','lightgreen','Lavender','AntiqueWhite','Gainsboro'],
-                borderColor: ['black'],
                 borderWidth: 1
             }]
         },
         options: {
-	indexAxis: 'y',
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+     	    responsive: true,
+	        maintainAspectRatio: false,
+	        indexAxis: 'y'
             }
-        }
+        
     });
 </script>
 
