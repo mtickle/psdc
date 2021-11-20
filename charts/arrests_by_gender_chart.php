@@ -19,10 +19,8 @@
 
 <script>
 
-var ctxGender = document.getElementById('ArrestsByGenderChart');
-ctxGender.height =350
-
-var GenderChart = new Chart(ctxGender, {
+var ctx = document.getElementById('ArrestsByGenderChart');
+    var myChart = new Chart(ctx, {
         type: 'pie',
         data: {
             labels: [<?php echo $temp_charge ?>],
@@ -34,10 +32,22 @@ var GenderChart = new Chart(ctxGender, {
             }]
         },
         options: {
-            responsive: true,
-            maintainAspectRatio:false
+            plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    color: 'rgb(255, 99, 132)'
+                }
             }
-        
+        },
+	        indexAxis: 'y',
+            
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
     });
 </script>
 
