@@ -33,21 +33,9 @@ var ctx = document.getElementById('ArrestsByGenderChart');
         },
         options: {
             plugins: {
-            legend: {
-                display: true,
-                position: bottom,
-                labels: {
-                    color: 'rgb(255, 99, 132)'
-                }
-            }
-        },
+                legend: { display: true, position: bottom }
+            },
 	        indexAxis: 'y',
-            
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
         }
     });
 </script>
