@@ -35,6 +35,7 @@ var ctx = document.getElementById('ArrestsByGenderChart');
             plugins: {
             legend: {
                 display: true,
+                position: bottom,
                 labels: {
                     color: 'rgb(255, 99, 132)'
                 }
