@@ -21,8 +21,7 @@
 
 var ctxGender = document.getElementById('ArrestsByGenderChart');
     ctxGender.height = 350
-    Chart.defaults.font.size = 12;
-
+    
     var GenderChart = new Chart(ctxGender, {
         type: 'pie',
         data: {
@@ -35,8 +34,10 @@ var ctxGender = document.getElementById('ArrestsByGenderChart');
             }]
         },
         options: {
+  responsive: true,
+        maintainAspectRatio: false,
             plugins: {
-                legend: { display: true }
+                legend: { display: true, position: 'bottom' }
             },
 	        indexAxis: 'y',
         }
