@@ -40,6 +40,9 @@ var ChargesChart = new Chart(ctxCharges, {
     options: {
         responsive: true,
         maintainAspectRatio: false,
+        plugins: {
+                legend: { display: true, position: 'bottom' }
+            },
         indexAxis: 'y',
         scales: {
             y: {

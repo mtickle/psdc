@@ -34,7 +34,7 @@ var ctxGender = document.getElementById('ArrestsByGenderChart');
             }]
         },
         options: {
-  responsive: true,
+        responsive: true,
         maintainAspectRatio: false,
             plugins: {
                 legend: { display: true, position: 'bottom' }

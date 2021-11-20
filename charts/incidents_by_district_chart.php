@@ -36,6 +36,9 @@ ctxDistricts.height = 350
         options: {
      	    responsive: true,
 	        maintainAspectRatio: false,
+            plugins: {
+                legend: { display: true, position: 'bottom' }
+            },
 	        indexAxis: 'y'
             }
         
