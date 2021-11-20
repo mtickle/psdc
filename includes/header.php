@@ -20,7 +20,8 @@
     elseif ($page == "about.php"):
       $about_active = "active";
     endif;
-
+    
+    include("classes/incident.php");
 ?>
 
 <html lang="en">
