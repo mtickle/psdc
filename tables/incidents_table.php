@@ -1,6 +1,5 @@
 
 <?php
-include("classes/incident.php");
 $objIncident = new Incident();
 $incidents = $objIncident->getIncidents();
 ?>
