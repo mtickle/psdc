@@ -15,12 +15,11 @@ $calls = $objIncident->getRecentCalls();
 <?php foreach($calls as $key => $call) :?>
     <div class="card">
         <div class="card-header">
-        <?php echo $call['incident'] ?>
+        <?php echo $call['incident'] ?>: <?php echo $call['location'] ?>
         </div>
         <div class="card-body">
         
         <div class="tile-map" id="map-<?php echo $call['id'] ?>"></div>
-        <h5 class="card-title"><?php echo $call['incident'] ?>: <?php echo $call['location'] ?></h5>
         <?php echo $call['agency'] ?> - <?php echo $call['call_time'] ?> on  <?php echo $call['call_date'] ?>
         </div>
     </div>
