@@ -14,6 +14,7 @@ $models = $objIncident->getModels($_GET["make_id"]);
         <tbody>
             <?php foreach($models as $key => $model) :?>
             <tr>
+                <td><?php echo $model['make_name'] ?></td>
                 <td><?php echo $model['model_name'] ?></td>
         	</tr>
         <?php endforeach;?>
