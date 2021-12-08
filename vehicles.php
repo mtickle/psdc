@@ -9,7 +9,7 @@
                         Data
                     </div>
                     <div class="card-body">
-                        <?php include("tables/vehicles_table.php"); ?>
+                        <?php include("tables/makes_table.php"); ?>
                     </div>
                 </div>
             </div>

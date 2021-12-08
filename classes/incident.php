@@ -75,6 +75,13 @@ class Incident {
 		return $data;
 	}
 
+	public function getModels($make_id) {
+		$sql = "select * from get_models();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
 }
 
 ?>
