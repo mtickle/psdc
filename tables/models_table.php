@@ -2,7 +2,7 @@
 <?php
 include_once("classes/incident.php");
 $objIncident = new Incident();
-$makes = $objIncident->getModels($_GET["make_id"]);
+$models = $objIncident->getModels($_GET["make_id"]);
 ?>
     
     <table id="charge_grid" class="table" width="100%" cellspacing="0">
