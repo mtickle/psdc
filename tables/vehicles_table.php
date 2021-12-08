@@ -14,7 +14,7 @@ $makes = $objIncident->getMakes();
         <tbody>
             <?php foreach($makes as $key => $make) :?>
             <tr>
-                <td><?php echo $make['make_name'] ?></td>
+                <td><a href="models.php?make_id=<?php echo $make['make_id'] ?>"><?php echo $make['make_name'] ?></a></td>
         	</tr>
         <?php endforeach;?>
         </tbody>
