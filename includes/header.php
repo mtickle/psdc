@@ -17,8 +17,10 @@
         $arrests_active = "active";
     elseif ($page == "calls.php"):
         $calls_active = "active"; 
+    elseif ($page == "vehicles.php"):
+        $vehicles_active = "active";     
     elseif ($page == "about.php"):
-      $about_active = "active";
+        $about_active = "active";
     endif;
     
     include("classes/incident.php");
@@ -57,6 +59,7 @@
                         <li class="nav-item"><a href="incidents.php" class="nav-link <?php echo $incidents_active;?>">Incidents</a></li>
                         <li class="nav-item"><a href="arrests.php" class="nav-link <?php echo $arrests_active;?>">Arrests</a></li>
                         <li class="nav-item"><a href="calls.php" class="nav-link <?php echo $calls_active;?>">Calls</a></li>
+                        <li class="nav-item"><a href="vehicles.php" class="nav-link <?php echo $vehicles_active;?>">Vehicles</a></li>
                         <li class="nav-item"><a href="about.php" class="nav-link <?php echo $about_active;?>">About</a>
                         </li>
                     </ul>                    
