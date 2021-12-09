@@ -76,7 +76,7 @@ class Incident {
 	}
 
 	public function getModels($make_id) {
-		$sql = "select * from get_models();";
+		$sql = "select * from get_models($make_id);";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
 		$data = pg_fetch_all($queryRecords);
 		return $data;

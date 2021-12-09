@@ -24,10 +24,10 @@ $calls = $objIncident->getRecentCalls();
    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
    id: 'mapbox/streets-v11',
-   tileSize: 512,
-   zoomOffset: -1
+   tileSize: 512
  }).addTo(mymap);
 
+mymap.setZoom(14);
 
  <?php foreach($calls as $key => $call) :?>
     L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['incident'] ?>").openPopup();
