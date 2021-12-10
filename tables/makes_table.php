@@ -18,7 +18,7 @@ $makes = $objIncident->getMakes();
             <tr>
                 <th scope="row"><?php echo $make['make_id'] ?></th>
                 <td><?php echo $make['make_name'] ?></td>
-                <td><a href="models.php?make_id=<?php echo $make['make_id'] ?>"><?php echo $make['make_name'] ?></a></td>
+                <td><a href="models.php?make_id=<?php echo $make['make_id'] ?>"><?php echo $make['recordcount'] ?></a></td>
         	</tr>
         <?php endforeach;?>
         </tbody>
