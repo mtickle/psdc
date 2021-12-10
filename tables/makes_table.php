@@ -5,18 +5,18 @@ $objIncident = new Incident();
 $makes = $objIncident->getMakes();
 ?>
     
-    <table id="charge_grid" class="table" width="100%" cellspacing="0">
+    <table id="charge_grid" class="table table-striped">
         <thead>
             <tr>
-                <th>Make ID</th>
-                <th>Make Name</th>
-                <th>Count</th>
+                <th scope="col">Make ID</th>
+                <th scope="col">Make Name</th>
+                <th scope="col">Count</th>
             </tr>
         </thead>
         <tbody>
             <?php foreach($makes as $key => $make) :?>
             <tr>
-                <td><?php echo $make['make_id'] ?></td>
+                <th scope="row"><?php echo $make['make_id'] ?></th>
                 <td><?php echo $make['make_name'] ?></td>
                 <td><a href="models.php?make_id=<?php echo $make['make_id'] ?>"><?php echo $make['make_name'] ?></a></td>
         	</tr>
