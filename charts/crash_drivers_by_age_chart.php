@@ -2,22 +2,22 @@
     //-------------------------------------------------------------
     //--- PHP Objects
     $newObj = new Incident();
-    $crimes = $newObj->getCrashDriversByAge();
-    $temp_crime_description = "";
-    $temp_crime_count = "";
+    $items = $newObj->getCrashDriversByAge();
+    $temp_item_description = "";
+    $temp_item_count = "";
     //-------------------------------------------------------------\
 
 	//-------------------------------------------------------------
 	//--- build out the array for the crime code
-  	foreach($crimes as $key => $crime) :
-        $temp_crime_description .= "'". $crime['age'] . "',";
-        $temp_crime_count .= "'". $crime['age_count'] . "',";
+  	foreach($items as $key => $item) :
+        $temp_item_description .= "'". $item['age'] . "',";
+        $temp_item_count .= "'". $item['age_count'] . "',";
     	endforeach;
-    	$temp_crime_description = rtrim($temp_crime_description, ',');
-   	 $temp_crime_count = rtrim($temp_crime_count, ',');
+    	$temp_item_description = rtrim($temp_item_description, ',');
+   	    $temp_item_count = rtrim($temp_item_count, ',');
+    ?>
 	//-------------------------------------------------------------
 
-?>
 
 <script>
 
@@ -28,10 +28,10 @@
     var IncidentsChart = new Chart(ctxIncidents, {
         type: 'bar',
         data: {
-            labels: [<?php echo $temp_crime_description ?>],
+            labels: [<?php echo $temp_item_description ?>],
             datasets: [{
                 label: 'Incidents',
-                data: [<?php echo $temp_crime_count ?>],
+                data: [<?php echo $temp_item_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
                 borderWidth: 1
