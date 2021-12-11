@@ -32,9 +32,9 @@
             datasets: [{
                 label: 'Crashes',
                 data: [<?php echo $temp_item_count ?>],
+                backgroundColor: ['lightblue'],
                 borderColor: ['black'],
                 borderWidth: 1,
-                backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
             }]
         },
         options: {
