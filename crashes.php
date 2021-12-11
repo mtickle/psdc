@@ -23,7 +23,7 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-container">
-                        <canvas id="ArrestsByGenderChart"></canvas>
+                        <canvas id="CrashDriversByGenderChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -46,6 +46,6 @@
 </div>
 <?php
       include("charts/crash_drivers_by_age_chart.php"); 
-      include("charts/arrests_by_gender_chart.php");  
+      include("charts/crash_drivers_by_gender_chart.php");  
       include("includes/footer.php")
 ?>
