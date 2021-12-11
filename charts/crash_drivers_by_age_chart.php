@@ -42,14 +42,7 @@
 	        matainAspectRatio: false,
             plugins: {
                 legend: { display: true, position: 'bottom' }
-            },
-	        indexAxis: 'y',
-            	scales: {
-                	y: {
-                    	beginAtZero: true
-                	}
-            
-}
+            }
         }
     });
 
