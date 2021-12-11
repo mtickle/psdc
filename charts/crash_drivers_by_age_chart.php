@@ -22,7 +22,7 @@
 <script>
 
     var ctxIncidents = document.getElementById('CrashDriverAgeAnalysis');
-    ctxIncidents.height = 150
+    ctxIncidents.height = 128
     Chart.defaults.font.size=12;
 
     var IncidentsChart = new Chart(ctxIncidents, {
