@@ -82,6 +82,20 @@ class Incident {
 		return $data;
 	}
 
+	public function getCrashDriversByAge() {
+		$sql = "select * from get_crash_drivers_by_age();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
+	public function getCrashDriversByGender() {
+		$sql = "select * from get_crash_drivers_by_gender();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
 }
 
 ?>

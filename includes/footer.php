@@ -7,6 +7,7 @@
       <li class="nav-item"><a href="incidents.php" class="nav-link px-2 text-muted">Incidents</a></li>
 	      <li class="nav-item"><a href="arrests.php" class="nav-link px-2 text-muted">Arrests</a></li>
       <li class="nav-item"><a href="calls.php" class="nav-link px-2 text-muted">Calls</a></li>
+      <li class="nav-item"><a href="crashes.php" class="nav-link px-2 text-muted">Crashes</a></li>
       <li class="nav-item"><a href="about.php" class="nav-link px-2 text-muted">About</a></li>
     </ul>
   </footer>
