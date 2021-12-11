@@ -26,7 +26,7 @@ var ctxGender = document.getElementById('CrashDriversByGenderChart');
         type: 'pie',
         data: {
             labels: [<?php echo $temp_item ?>],
-            datasets: [{label: 'Arrest Gender',
+            datasets: [{label: 'Crash Driver Gender',
             data: [<?php echo $temp_item_count ?>],
             backgroundColor: ['lightblue','lightgreen'],
             borderColor: ['black'],

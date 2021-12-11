@@ -4,7 +4,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
             <div class="card">
                 <div class="card-header">
                    Crash Drivers by Age
@@ -16,10 +16,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-4">
             <div class="card">
                 <div class="card-header">
-                    Arrests by Gender
+                    Crash Drivers by Gender
                 </div>
                 <div class="card-body">
                     <div class="chart-container">
