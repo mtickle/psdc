@@ -26,7 +26,7 @@
     Chart.defaults.font.size=12;
 
     var IncidentsChart = new Chart(ctxIncidents, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: [<?php echo $temp_item_description ?>],
             datasets: [{
