@@ -30,7 +30,7 @@
         data: {
             labels: [<?php echo $temp_item_description ?>],
             datasets: [{
-                label: 'Incidents',
+                label: 'Crashes',
                 data: [<?php echo $temp_item_count ?>],
                 backgroundColor: ['lightblue'],
                 borderColor: ['black'],
