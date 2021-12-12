@@ -1,3 +1,4 @@
+
 </main>
 
 <div class="container">
@@ -8,6 +9,7 @@
 	      <li class="nav-item"><a href="arrests.php" class="nav-link px-2 text-muted">Arrests</a></li>
       <li class="nav-item"><a href="calls.php" class="nav-link px-2 text-muted">Calls</a></li>
       <li class="nav-item"><a href="crashes.php" class="nav-link px-2 text-muted">Crashes</a></li>
+      <li class="nav-item"><a href="vehicles.php" class="nav-link px-2 text-muted">Vehicles</a></li>
       <li class="nav-item"><a href="about.php" class="nav-link px-2 text-muted">About</a></li>
     </ul>
   </footer>
