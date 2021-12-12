@@ -15,8 +15,9 @@
     	endforeach;
     	$temp_item_description = rtrim($temp_item_description, ',');
    	    $temp_item_count = rtrim($temp_item_count, ',');
+    //-------------------------------------------------------------
     ?>
-	//-------------------------------------------------------------
+	
 
 
 <script>
