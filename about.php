@@ -44,11 +44,6 @@
         </div>
     </div>
 
-
-    <h5>Built with ...</h5>
-
-
-
 </div>
 
 <?php
