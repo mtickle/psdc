@@ -96,6 +96,12 @@ class Incident {
 		return $data;
 	}
 
+	public function getTopCrashFactors() {
+		$sql = "select * from public.get_top_crash_factors();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
 }
 
 ?>

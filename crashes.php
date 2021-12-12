@@ -37,7 +37,7 @@
                         Data
                     </div>
                     <div class="card-body">
-                        <?php include("tables/arrests_table.php"); ?>
+                        <?php include("tables/crash_factors_table.php"); ?>
                     </div>
                 </div>
             </div>
