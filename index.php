@@ -55,6 +55,7 @@
                 </div>
             </div>
         </div>
+        <br />
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
@@ -89,6 +90,7 @@
                 </div>
             </div>
         </div>
+        <br />
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">
