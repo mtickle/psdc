@@ -24,16 +24,13 @@ $calls = $objIncident->getRecentCalls();
    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
    id: 'mapbox/streets-v11',
-   tileSize: 512
+   tileSize: 512,
+   zoomOffset: -1
  }).addTo(mymap);
 
- L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>])
-.addTo(mymap).bindPopup("<?php echo $call['agency'] ?><br /><?php echo $call['incident'] ?>").openPopup();
 
  <?php foreach($calls as $key => $call) :?>
-  L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>])
-  .addTo(mymap).bindPopup("<?php echo $call['agency'] ?><br /><?php echo $call['incident'] ?>").openPopup();
-  
+    L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['incident'] ?><?php echo $call['latitude'] ?>").openPopup();
   <?php endforeach;?>
 
 </script>
