@@ -8,7 +8,7 @@ $calls = $objIncident->getRecentCalls();
 <style>
 #map { 
     height: 380px; 
-    width: 900px;
+    width: 100%;
   }
 
 </style>
