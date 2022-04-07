@@ -19,7 +19,11 @@
 
         </div>
     </div>    
+<<<<<<< HEAD
 <div class="row">
+=======
+    <div class="row">
+>>>>>>> 073ea5a489e38b93bc5cecf9ab577fa8da70eb5b
         <div class="col-sm-9">
              <?php include("tables/recent_calls_cards.php"); ?>
         </div>
