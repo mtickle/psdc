@@ -3,7 +3,7 @@
 
 <div class="container">
 <div class="row">
-        <div class="col-sm-9">
+        <div class="col-lg-12">
         <div class="card">
                 <div class="card-header">
                     Calls Map
