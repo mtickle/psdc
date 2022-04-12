@@ -105,8 +105,24 @@
                 </div>
             </div>
         </div>
+        <div class="row">
         <div class="col-sm-6">
-
+            <div class="card">
+                <div class="card-header">
+                    VIN Lookup
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <h5 class="card-title">VIN Lookup</h5>
+                        <p class="card-text">Try to decode a VIN.</p>
+                        <a href="vin.php" class="btn btn-primary">VIN Lookup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="col-sm-6">
+        
         </div>
     </div>
 
@@ -115,7 +131,7 @@
 
 
 <?php
-      include("charts/arrests_chart.php"); 
-      include("charts/arrests_by_gender_chart.php");  
+      //include("charts/arrests_chart.php"); 
+      //include("charts/arrests_by_gender_chart.php");  
       include("includes/footer.php")
 ?>
