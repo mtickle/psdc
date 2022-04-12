@@ -13,7 +13,7 @@
                     <form>
   <div class="form-group">
     <label for="exampleInputEmail1">VIN</label>
-    <input type="email" class="form-control" id="vin" aria-describedby="vin" placeholder="1C4RJFBM2GC306164">
+    <input type="text" class="form-control" id="vin" aria-describedby="vin" placeholder="1C4RJFBM2GC306164">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
