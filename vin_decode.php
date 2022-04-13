@@ -24,14 +24,6 @@ $ModelYear = $chunk['ModelYear'];
 $VIN = $chunk['VIN'];
 }
 
-// echo $BodyClass .'<br/>';
-// echo $VehicleType .'<br/>';
-// echo $FuelTypePrimary . '<br />';
-// echo $Make . '<br />';
-// echo $Model . '<br />';
-// echo $ModelYear . '<br />';
-// echo $VIN . '<br />';
-
 ?>
 
 <?php include 'includes/header.php'; ?>
@@ -48,11 +40,13 @@ $VIN = $chunk['VIN'];
 
                     <ul class="list-group">
                         <li class="list-group-item"><?php echo $VIN ?></li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
+                        <li class="list-group-item"><?php echo $Make ?></li>
+                        <li class="list-group-item"><?php echo $Model ?></li>
+                        <li class="list-group-item"><?php echo $ModelYear ?></li>
+                        <li class="list-group-item"><?php echo $VehicleType ?></li>
                     </ul>
+
+                    <a href="vin.php">Run Another</a>
 
                 </div>
             </div>
