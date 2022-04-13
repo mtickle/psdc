@@ -10,7 +10,11 @@ $in_vin =  $_POST["vin"];
 
 $response = file_get_contents('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' . $in_vin . '?format=xml');
 
+
+
 $xml = new SimpleXMLElement($response);
+
+$xml = "<<<XML " . $xml . " XML";
 
 
 libxml_use_internal_errors(true);
