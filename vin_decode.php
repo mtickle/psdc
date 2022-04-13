@@ -12,9 +12,22 @@ $response = file_get_contents('https://vpic.nhtsa.dot.gov/api/vehicles/decodevin
 
 $xml = new SimpleXMLElement($response);
 
-echo $xml->asXML();
 
-$Response = new SimpleXMLElement($xml);
+libxml_use_internal_errors(true);
+$sxe = simplexml_load_string($xml);
+if ($sxe === false) {
+    echo "Failed loading XML\n";
+    foreach(libxml_get_errors() as $error) {
+        echo "\t", $error->message;
+    }
+}
+
+
+
+
+//echo $xml->asXML();
+
+//$Response = new SimpleXMLElement($xml);
 
 
 // $details = new SimpleXMLElement($response);
