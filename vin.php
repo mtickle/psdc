@@ -10,7 +10,7 @@
                 </div>
                 <div class="card-body">
 
-                    <form action="vin_decode.php" method="get">
+                    <form action="vin_decode.php" method="post">
                         <div class="form-group">
                             <label for="exampleInputEmail1">VIN</label>
                             <input type="text" class="form-control" id="vin" name="vin" aria-describedby="vin" placeholder="1C4RJFBM2GC306164">
