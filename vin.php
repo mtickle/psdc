@@ -9,16 +9,18 @@
                     Data
                 </div>
                 <div class="card-body">
+                    <form action="vin_decode.php" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">VIN</label>
+                            <input type="text" id="vin" name="vin" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
 
+                    <br />
 
-
-                <form action="vin_decode.php" method="post">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">VIN</label>
-    <input type="text" id="vin" name="vin" class="form-control">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+                    <a class="btn btn-primary btn-sm" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
+                    
 
                 </div>
             </div>
