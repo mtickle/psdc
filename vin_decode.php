@@ -14,7 +14,7 @@ $xml = new SimpleXMLElement($response);
 
 echo $xml->asXML();
 
-$details = new SimpleXMLElement($xml);
+$Response = new SimpleXMLElement($xml);
 
 
 // $details = new SimpleXMLElement($response);
