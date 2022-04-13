@@ -1,6 +1,4 @@
 
-<html>
-<body>
 
 <?php
 
@@ -16,13 +14,12 @@ $xml = new SimpleXMLElement($response);
 
 echo $xml->asXML();
 
+$details = new SimpleXMLElement($xml);
+
 
 // $details = new SimpleXMLElement($response);
 
 // echo $details;//->DecodedVINValues[0]->BodyClass;
 
-?><br>
+?>
 
-
-</body>
-</html>
