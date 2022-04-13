@@ -1,27 +1,26 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
+//--- Grab the VIN from the form
 $in_vin =  $_POST["vin"]; 
+
+//--- Set up some stuff for the API
 $format = "json";
 $url = 'https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' . $in_vin . '?format=' . $format;
+
+//--- Get the JSON and do PHP stuff to it.
 $json = file_get_contents($url);
-
 $decode = json_decode($json, true);
-
 $results = array();
 
+//--- Get the values from the JSON.
 foreach($decode['Results'] as $chunk) {
-
-$BodyClass = $chunk['BodyClass'];
-$VehicleType = $chunk['VehicleType'];
-$FuelTypePrimary = $chunk['FuelTypePrimary'];
-$Make = $chunk['Make'];
-$Model = $chunk['Model'];
-$ModelYear = $chunk['ModelYear'];
-$VIN = $chunk['VIN'];
+    $BodyClass = $chunk['BodyClass'];
+    $VehicleType = $chunk['VehicleType'];
+    $FuelTypePrimary = $chunk['FuelTypePrimary'];
+    $Make = $chunk['Make'];
+    $Model = $chunk['Model'];
+    $ModelYear = $chunk['ModelYear'];
+    $VIN = $chunk['VIN'];
 }
 
 ?>
@@ -44,11 +43,12 @@ $VIN = $chunk['VIN'];
                         <li class="list-group-item"><?php echo $Model ?></li>
                         <li class="list-group-item"><?php echo $ModelYear ?></li>
                         <li class="list-group-item"><?php echo $VehicleType ?></li>
+                        <li class="list-group-item"><?php echo $FuelTypePrimary ?></li>
                     </ul>
 
                     <br />
 
-                    <a  class="btn btn-primary btn-sm" href="vin.php">Run Another</a>
+                    <a class="btn btn-primary btn-sm" href="vin.php">Run Another</a>
 
                 </div>
             </div>
