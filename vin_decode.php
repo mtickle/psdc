@@ -10,10 +10,7 @@ error_reporting(E_ALL);
 
 $in_vin =  $_POST["vin"]; 
 
-
-
-
-$response = file_get_contents('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' + $in_vin '?format=xml');
+$response = file_get_contents('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' . $in_vin . '?format=xml');
 
 echo $response;
 
