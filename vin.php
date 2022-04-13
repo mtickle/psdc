@@ -10,13 +10,15 @@
                 </div>
                 <div class="card-body">
 
-                    <form action="vin_decode.php" method="post">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">VIN</label>
-                            <input type="text" class="form-control" id="vin" name="vin" aria-describedby="vin" placeholder="1C4RJFBM2GC306164">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+
+
+                <form action="vin_decode.php" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">VIN</label>
+    <input type="text" id="vin" name="vin" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
                 </div>
             </div>
