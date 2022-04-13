@@ -12,9 +12,14 @@ $in_vin =  $_POST["vin"];
 
 $response = file_get_contents('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' . $in_vin . '?format=xml');
 
-$details = new SimpleXMLElement($response);
+$xml = new SimpleXMLElement($response);
 
-echo $details;//->DecodedVINValues[0]->BodyClass;
+echo $xml->asXML();
+
+
+// $details = new SimpleXMLElement($response);
+
+// echo $details;//->DecodedVINValues[0]->BodyClass;
 
 ?><br>
 
