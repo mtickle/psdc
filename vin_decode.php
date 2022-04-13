@@ -46,7 +46,7 @@ $VIN = $chunk['VIN'];
                         <li class="list-group-item"><?php echo $VehicleType ?></li>
                     </ul>
 
-                    <a href="vin.php">Run Another</a>
+                    <a  class="btn btn-primary btn-lg" href="vin.php">Run Another</a>
 
                 </div>
             </div>
