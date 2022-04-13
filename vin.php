@@ -14,12 +14,13 @@
                             <label for="exampleInputEmail1" class="form-label">VIN</label>
                             <input type="text" id="vin" name="vin" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
+                        <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
                     </form>
 
                     <br />
 
-                    <a class="btn btn-primary btn-sm" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
+                    
                     
 
                 </div>
