@@ -14,7 +14,7 @@ $response = file_get_contents('https://vpic.nhtsa.dot.gov/api/vehicles/decodevin
 
 $details = new SimpleXMLElement($response);
 
-echo $details->DecodedVINValues[0]->BodyClass;
+echo $details;//->DecodedVINValues[0]->BodyClass;
 
 ?><br>
 
