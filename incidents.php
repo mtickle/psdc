@@ -1,7 +1,13 @@
 <?php include 'includes/header.php'; ?>
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6">
+
+
+
+
+
+
+<div class="row">
+        <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">
                     Incidents
@@ -14,7 +20,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">
                 Incidents By District
@@ -44,6 +50,7 @@
 
 
 <?php
+      include("maps/incidents_map.php");
       include("charts/incidents_chart.php");
       include("charts/incidents_by_district_chart.php");
       include("includes/footer.php")  
