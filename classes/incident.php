@@ -18,6 +18,13 @@ class Incident {
 		return $data;
 	}
 
+	public function getRecentIncidents() {
+		$sql = "select * from get_recent_incidents();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
 	public function getCrimeTypeStats() {
 		$sql = "SELECT * FROM crime_description_count limit 5;";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
