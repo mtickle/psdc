@@ -23,7 +23,7 @@
 
     var ctxCalls = document.getElementById('CallsByTypeChart');
     ctxCalls.height = 450
-    Chart.defaults.font.size = 14;
+    //Chart.defaults.font.size = 14;
 
 var CallsChart = new Chart(ctxCalls, {
     type: 'bar',
