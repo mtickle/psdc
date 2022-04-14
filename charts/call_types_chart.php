@@ -32,10 +32,8 @@ var CallsChart = new Chart(ctxCalls, {
         datasets: [{
             label: 'Number of Calls',
             data: [<?php echo $temp_call_count ?>],
-            //backgroundColor: ['lightblue'],
-            borderColor: Utils.CHART_COLORS.red,
-            backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
-            //borderColor: ['black'],
+            backgroundColor: ['lightblue'],
+            borderColor: ['black'],
             borderWidth: 1
         }]
     },
