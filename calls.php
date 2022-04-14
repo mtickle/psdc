@@ -41,6 +41,24 @@
         </div>
     </div>
     <br />
+
+    <br />
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    Calls for Assistance
+                </div>
+                <div class="card-body">
+                <?php include("tables/recent_calls_table.php"); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+
     <div class="row">
         <div class="col-lg-12">
             <?php include("tables/recent_calls_cards.php"); ?>
@@ -49,7 +67,8 @@
 
 
     <?php 
+        include("tables/recent_calls_table.php");
         include("charts/call_types_chart.php");
         include("charts/call_agencies_chart.php");
-        include 'includes/footer.php';
+        include("includes/footer.php");
     ?>
