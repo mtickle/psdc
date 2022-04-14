@@ -38,6 +38,45 @@ foreach($decode['Results'] as $chunk) {
                 </div>
                 <div class="card-body">
 
+                <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">VIN</th>
+      <td><?php echo $VIN ?></td>
+    </tr>
+    <tr>
+      <th scope="row">Manufacturer</th>
+      <td><?php echo $Manufacturer ?></td>
+    </tr>
+    <tr>
+      <th scope="row">Make</th>
+      <td><?php echo $Make ?></td>
+    </tr>
+    <tr>
+      <th scope="row">Model</th>
+      <td><?php echo $Model ?></td>
+    </tr>
+    <tr>
+      <th scope="row">Model Year</th>
+      <td><?php echo $ModelYear ?></td>
+    </tr>
+    <tr>
+      <th scope="row">Vehicle Type</th>
+      <td><?php echo $VehicleType ?></td>
+    </tr>
+    <tr>
+      <th scope="row">Fuel Type</th>
+      <td><?php echo $FuelTypePrimary ?></td>
+    </tr>
+</tbody>
+</table>
+
                     <ul class="list-group">
                         <li class="list-group-item"><?php echo $VIN ?></li>
                         <li class="list-group-item"><?php echo $Manufacturer ?></li>
