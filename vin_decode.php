@@ -17,6 +17,7 @@ foreach($decode['Results'] as $chunk) {
     $BodyClass = $chunk['BodyClass'];
     $VehicleType = $chunk['VehicleType'];
     $FuelTypePrimary = $chunk['FuelTypePrimary'];
+    $Manufacturer = $chunk['Manufacturer'];
     $Make = $chunk['Make'];
     $Model = $chunk['Model'];
     $ModelYear = $chunk['ModelYear'];
@@ -39,6 +40,7 @@ foreach($decode['Results'] as $chunk) {
 
                     <ul class="list-group">
                         <li class="list-group-item"><?php echo $VIN ?></li>
+                        <li class="list-group-item"><?php echo $Manufacturer ?></li>
                         <li class="list-group-item"><?php echo $Make ?></li>
                         <li class="list-group-item"><?php echo $Model ?></li>
                         <li class="list-group-item"><?php echo $ModelYear ?></li>
