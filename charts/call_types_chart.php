@@ -32,9 +32,9 @@ var CallsChart = new Chart(ctxCalls, {
         datasets: [{
             label: 'Number of Calls',
             data: [<?php echo $temp_call_count ?>],
-            backgroundColor: ['red'],
+            backgroundColor: ['lightblue'],
             borderColor: ['black'],
-            borderWidth: 2
+            borderWidth: 1
         }]
     },
     options: {
