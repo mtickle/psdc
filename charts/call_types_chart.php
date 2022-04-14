@@ -2,19 +2,19 @@
     //-------------------------------------------------------------
     //--- PHP Objects
     $newObj = new Incident();
-    $charges = $newObj->getTopCalls();
-    $temp_charge = "";
-    $temp_charge_count = "";
+    $calls = $newObj->getTopCalls();
+    $temp_call = "";
+    $temp_call_count = "";
     //-------------------------------------------------------------
 
 	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
-	foreach($charges as $key => $charge) :
-            $temp_charge .= "'". $charge['incident'] . "',";
-            $temp_charge_count .= "'". $charge['incident_count'] . "',";
+	foreach($calls as $key => $call) :
+            $temp_call .= "'". $call['incident'] . "',";
+            $temp_call_count .= "'". $call['incident_count'] . "',";
     endforeach;
-    $temp_charge = rtrim($temp_charge, ',');
-    $temp_charge_count = rtrim($temp_charge_count, ',');
+    $temp_call = rtrim($temp_call, ',');
+    $temp_call_count = rtrim($temp_call_count, ',');
 	//-------------------------------------------------------------	
 ?>
 
@@ -23,15 +23,15 @@
 
     var ctxCalls = document.getElementById('CallsByTypeChart');
     ctxCalls.height = 350
-    Chart.defaults.font.size = 12;
+    Chart.defaults.font.size = 14;
 
 var CallsChart = new Chart(ctxCalls, {
     type: 'bar',
     data: {
-        labels: [<?php echo $temp_charge ?>],
+        labels: [<?php echo $temp_call ?>],
         datasets: [{
             label: 'Number of Calls',
-            data: [<?php echo $temp_charge_count ?>],
+            data: [<?php echo $temp_call_count ?>],
             backgroundColor: ['lightblue'],
             borderColor: ['black'],
             borderWidth: 1
