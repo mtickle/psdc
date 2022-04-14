@@ -23,7 +23,7 @@
 
     var ctxCallAgencies = document.getElementById('CallsByAgencyChart');
     ctxCallAgencies.height = 350
-    Chart.defaults.font.size = 12;
+    //Chart.defaults.font.size = 12;
 
 var CallsAgencyChart = new Chart(ctxCallAgencies, {
     type: 'bar',
