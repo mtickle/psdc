@@ -1,6 +1,5 @@
 <?php include 'includes/header.php'; ?>
 
-
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
@@ -17,12 +16,7 @@
                         <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
                         <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
                     </form>
-
                     <br />
-
-                    
-                    
-
                 </div>
             </div>
         </div>
