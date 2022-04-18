@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <main  class="container-lg">
+    <main>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
