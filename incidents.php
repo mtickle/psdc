@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header2.php'; ?>
 <div class="container">
 
 
@@ -65,5 +65,5 @@
       include("maps/incidents_map.php");
       include("charts/incidents_chart.php");
       include("charts/incidents_by_district_chart.php");
-      include("includes/footer.php")  
+      include("includes/footer2.php")  
 ?>
