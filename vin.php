@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <form action="vin_decode.php" method="post">
 
-                        <div class="row g-3 align-items-center">
+                        <div class="row g-2 align-items-center">
                             <div class="col-auto">
                                 <label for="vin" class="col-form-label">VIN</label>
                             </div>    
