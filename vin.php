@@ -17,7 +17,8 @@
                 </div>
                 <div class="card-body">
                     <form action="vin_decode.php" method="post">
-                        <div class="mb-3">
+                       
+                    <div>
                             <label for="exampleInputEmail1" class="form-label">VIN</label>
                             <input type="text" id="vin" name="vin" class="form-control">
                         </div>

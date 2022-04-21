@@ -11,7 +11,7 @@
 
     <div class="table-responsive">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
                         Data
