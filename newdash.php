@@ -1,4 +1,33 @@
+<?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    $page = basename($_SERVER['PHP_SELF']);
+    $index_active = "";
+    $incidents_active = "";
+    $arrests_active = "";
+    $about_active = "";	
+    $calls_active = "";
+    $crashes_active="";
 
+    if ($page == "index.php"):
+      $index_active = "active";
+    elseif ($page == "incidents.php"):
+        $incidents_active = "active";
+   elseif ($page == "arrests.php"):
+        $arrests_active = "active";
+    elseif ($page == "calls.php"):
+        $calls_active = "active"; 
+    elseif ($page == "vehicles.php"):
+        $vehicles_active = "active";     
+    elseif ($page == "about.php"):
+        $about_active = "active";
+        elseif ($page == "crashes.php"):
+            $crashes_active = "active";    
+    endif;
+    
+    include("classes/incident.php");
+?>
 <!doctype html>
 <html lang="en">
   <head>
