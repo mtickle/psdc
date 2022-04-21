@@ -12,7 +12,7 @@
     <div class="table-responsive">
 
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">
                     Arrests by Charges
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">
                     Arrests by Gender
