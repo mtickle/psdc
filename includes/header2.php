@@ -69,7 +69,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="arrests.php"><span data-feather="camera"></span>Arrests</a>
+            <a class="nav-link" href="arrests.php"><span data-feather="camera"></span>Arrests</a>
           </li>
 
           <li class="nav-item">

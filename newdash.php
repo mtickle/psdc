@@ -84,6 +84,7 @@
   </div>
 </div>
 
+
 <?php
       include("charts/arrests_chart.php"); 
       include("charts/arrests_by_gender_chart.php");  
