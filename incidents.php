@@ -1,5 +1,4 @@
 <?php include 'includes/header2.php'; ?>
-<div class="container">
 
 
 
@@ -58,7 +57,8 @@
             </div>
         </div>
     </div>
-</div>
+
+    
 
 
 <?php
