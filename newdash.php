@@ -46,11 +46,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="arrests.php"><span data-feather="file"></span>Arrests</a>
+            <a class="nav-link" href="arrests.php"><span data-feather="camera"></span>Arrests</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="calls.php"><span data-feather="file"></span>Calls</a>
+            <a class="nav-link" href="calls.php"><span data-feather="alert-triangle"></span>Calls</a>
           </li>
 
           <li class="nav-item">
@@ -58,11 +58,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="vehicles.php"><span data-feather="file"></span>Vehicles</a>
+            <a class="nav-link" href="vehicles.php"><span data-feather="truck"></span>Vehicles</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="vin.php"><span data-feather="file"></span>VIN Lookup</a>
+            <a class="nav-link" href="vin.php"><span data-feather="search"></span>VIN Lookup</a>
           </li>
 
         </ul>
