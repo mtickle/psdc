@@ -1,139 +1,96 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header2.php'; ?>
 
-<div class="container">
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
-    <div class="row">
-
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    Dashboard
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <h5 class="card-title">Dashboard</h5>
-                        <p class="card-text">Dashboard containing charts and graphs for incidents, arrests and calls.
-                        </p>
-                        <a href="dashboard.php" class="btn btn-primary">View Dashboard</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    RPD Incidents
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-
-                        <h5 class="card-title">Daily Raleigh Police Incidents</h5>
-                        <p class="card-text">Raleigh Police Department incidents reported yesterday using NIBRS.</p>
-                        <a href="incidents.php" class="btn btn-primary">View Incidents</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
     </div>
 
-    <br />
 
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    CCBI Arrest Inprocessing
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <h5 class="card-title">City-County Bureau of Investigation</h5>
-                        <p class="card-text">Metadata from CCBI arrest processing.</p>
-                        <a href="arrests.php" class="btn btn-primary">View Arrests</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br />
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    911 Center Calls
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <h5 class="card-title">Raleigh/Wake County Emergency Communications</h5>
-                        <p class="card-text">Metdata from Wake County 911 Center calls.</p>
-                        <a href="calls.php" class="btn btn-primary">View Calls</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="table-responsive">
 
-    </div>
-
-    <br />
-
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    MVC Persons
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <h5 class="card-title">Persons Involved in Crashes</h5>
-                        <p class="card-text">Data from completed DMV-349 Crash Forms.</p>
-                        <a href="crashes.php" class="btn btn-primary">View Data</a>
-                    </div>
-                </div>
-            </div>
+      <div class="card">
+        <div class="card-header">
+          Incidents
         </div>
-        <br />
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    Vehicle Make/Model Data
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <h5 class="card-title">Vehicle Make and Model Data</h5>
-                        <p class="card-text">Data from NHTSA Product Information Catalog.</p>
-                        <a href="vehicles.php" class="btn btn-primary">View Data</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <br />
+        <div class="card-body">
         <div class="row">
             <div class="col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    VIN Lookup
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <h5 class="card-title">VIN Lookup</h5>
-                        <p class="card-text">Try to decode a VIN.</p>
-                        <a href="vin.php" class="btn btn-primary">VIN Lookup</a>
-                    </div>
-                </div>
+               <h5 class="card-title">Incidents by Type</h5>
+               <div class="chart-container" >
+                    <canvas id="IncidentAnalysis"></canvas>
+                 </div>  
             </div>
-        </div>
-        <br />
-        <div class="col-sm-6">
-        
-        </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">Incidents by District</h5>
+                <div class="chart-container" >
+                    <canvas id="IncidentsByDistrict"></canvas>
+                </div> 
+            </div>
+            </div>
+        </div>  
     </div>
 
+    <p></p>
+    
+    <div class="card">
+        <div class="card-header">
+          Arrests
+        </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+               <h5 class="card-title">Arrests by Charge</h5>
+               <div class="chart-container">
+               <canvas id="ArrestsByChargeChart"></canvas>
+           </div>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">Arrests by Gender</h5>
+                <div class="chart-container">
+                    <canvas id="ArrestsByGenderChart"></canvas>
+                </div>
+            </div>
+            </div>
+        </div>  
+    </div>
+
+    <p></p>
+    
+    <div class="card">
+        <div class="card-header">
+          Calls for Assistance
+        </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+               <h5 class="card-title">Calls by Type</h5>
+               <div class="chart-container">
+                <canvas id="CallsByTypeChart"></canvas>
+            </div>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">Calls by Agency</h5>
+                <div class="chart-container">
+                    <canvas id="CallsByAgencyChart"></canvas>
+                </div>
+            </div>
+            </div>
+        </div>  
+    </div>
+     
+      </div>
+    </main>
+  </div>
 </div>
 
 
-
 <?php
-      //include("charts/arrests_chart.php"); 
-      //include("charts/arrests_by_gender_chart.php");  
-      include("includes/footer.php")
+      include("charts/arrests_chart.php"); 
+      include("charts/arrests_by_gender_chart.php");  
+      include("charts/incidents_chart.php");
+      include("charts/incidents_by_district_chart.php");
+      include("charts/call_types_chart.php");
+      include("charts/call_agencies_chart.php");
+      include("includes/footer2.php");
 ?>

@@ -20,9 +20,11 @@
         $calls_active = "active"; 
     elseif ($page == "vehicles.php"):
         $vehicles_active = "active";     
+    elseif ($page == "vin.php"):
+          $vin_active = "active";             
     elseif ($page == "about.php"):
         $about_active = "active";
-        elseif ($page == "crashes.php"):
+    elseif ($page == "crashes.php"):
             $crashes_active = "active";    
     endif;
     
@@ -61,31 +63,31 @@
         <ul class="nav flex-column">
 
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="newdash.php"><span data-feather="home"></span>Dashboard</a>
+            <a class="nav-link <?php echo $index_active;?>" aria-current="page" href="index.php"><span data-feather="home"></span>Dashboard</a>
             </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="incidents.php"><span data-feather="file"></span>Incidents</a>
+            <a class="nav-link <?php echo $incidents_active;?>" href="incidents.php"><span data-feather="file"></span>Incidents</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="arrests.php"><span data-feather="camera"></span>Arrests</a>
+            <a class="nav-link <?php echo $arrests_active;?>" href="arrests.php"><span data-feather="camera"></span>Arrests</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="calls.php"><span data-feather="alert-triangle"></span>Calls</a>
+            <a class="nav-link <?php echo $calls_active;?>" href="calls.php"><span data-feather="alert-triangle"></span>Calls</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="crashes.php"><span data-feather="file"></span>Crashes</a>
+            <a class="nav-link <?php echo $crashes_active;?>" href="crashes.php"><span data-feather="file"></span>Crashes</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="vehicles.php"><span data-feather="truck"></span>Vehicles</a>
+            <a class="nav-link <?php echo $vehicles_active;?>" href="vehicles.php"><span data-feather="truck"></span>Vehicles</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="vin.php"><span data-feather="search"></span>VIN Lookup</a>
+            <a class="nav-link  <?php echo $vin_active;?>" href="vin.php"><span data-feather="search"></span>VIN Lookup</a>
           </li>
 
         </ul>
