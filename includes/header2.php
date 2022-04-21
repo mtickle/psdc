@@ -61,7 +61,7 @@
         <ul class="nav flex-column">
 
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php"><span data-feather="home"></span>Dashboard</a>
+            <a class="nav-link active" aria-current="page" href="newdash.php"><span data-feather="home"></span>Dashboard</a>
             </li>
 
           <li class="nav-item">
