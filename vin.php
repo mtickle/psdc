@@ -18,16 +18,17 @@
                         <form action="vin_decode.php" method="post">
 
                         <div class="row g-3 align-items-center">
-                        <div class="col-auto">
-                            <label for="vin" class="col-form-label">VIN</label>
-                        </div>    
-                        <div class="col-auto">
-                            <input type="text" id="vin" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
-                            <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
-                        </form>
-                        
+                            <div class="col-auto">
+                                <label for="vin" class="col-form-label">VIN</label>
+                            </div>    
+                            <div class="col-auto">
+                                <input type="text" id="vin" name="vin" class="form-control">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
+                                <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
+                            </div>
+                            </form>
                         </div>   
                     </div>
 
