@@ -1,7 +1,16 @@
-<?php include 'includes/header.php';?>
+<?php include 'includes/header2.php'; ?>
 
 
-<div class="container">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Arrests</h1>
+    </div>
+
+
+    <div class="table-responsive">
+
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -70,5 +79,5 @@
         include("tables/recent_calls_table.php");
         include("charts/call_types_chart.php");
         include("charts/call_agencies_chart.php");
-        include("includes/footer.php");
+        include("includes/footer2.php");
     ?>
