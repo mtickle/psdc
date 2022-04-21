@@ -36,42 +36,35 @@
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
+
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.php"><span data-feather="home"></span>Dashboard</a>
+            </li>
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home"></span>
-              Dashboard
-            </a>
+            <a class="nav-link" href="incidents.php"><span data-feather="file"></span>Incidents</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Orders
-            </a>
+            <a class="nav-link" href="arrests.php"><span data-feather="file"></span>Arrests</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Products
-            </a>
+            <a class="nav-link" href="calls.php"><span data-feather="file"></span>Calls</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Customers
-            </a>
+            <a class="nav-link" href="crashes.php"><span data-feather="file"></span>Crashes</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
-              Reports
-            </a>
+            <a class="nav-link" href="vehicles.php"><span data-feather="file"></span>Vehicles</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers"></span>
-              Integrations
-            </a>
+            <a class="nav-link" href="vin.php"><span data-feather="file"></span>VIN Lookup</a>
           </li>
+
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
