@@ -52,8 +52,6 @@
         </div>
 
     </div>
-    </div>
-
 </main>
 <?php
       include("charts/crash_drivers_by_age_chart.php"); 
