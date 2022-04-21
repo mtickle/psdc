@@ -19,16 +19,15 @@
 
                         <div class="row g-3 align-items-center">
                         <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Password</label>
+                            <label for="vin" class="col-form-label">VIN</label>
                         </div>    
                         <div class="col-auto">
-                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                            <input type="text" id="vin" class="form-control">
                         </div>
                         </div>   
                     </div>
 
-                            <label for="vin" class="form-label">VIN</label>
-                            <input type="text" id="vin" name="vin" class="form-control">
+                         
                             <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
                             <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
                         </form>
