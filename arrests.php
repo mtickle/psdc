@@ -11,27 +11,28 @@
 
     <div class="table-responsive">
 
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-header">
-                    Arrests by Charges
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <canvas id="ArrestsByChargeChart"></canvas>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        Arrests by Charges
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <canvas id="ArrestsByChargeChart"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-header">
-                    Arrests by Gender
-                </div>
-                <div class="card-body">
-                    <div class="chart-container">
-                        <canvas id="ArrestsByGenderChart"></canvas>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        Arrests by Gender
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <canvas id="ArrestsByGenderChart"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,8 +54,8 @@
         </div>
 
     </div>
-</div>
-<?php
+    </div>
+    <?php
       include("charts/arrests_chart.php"); 
       include("charts/arrests_by_gender_chart.php");  
       include("includes/footer2.php")
