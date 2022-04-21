@@ -17,11 +17,8 @@
                 </div>
                 <div class="card-body">
                     <form action="vin_decode.php" method="post">
-                       
-                    <div>
-                            <label for="exampleInputEmail1" class="form-label">VIN</label>
-                            <input type="text" id="vin" name="vin" class="form-control">
-                        </div>
+                         <label for="exampleInputEmail1" class="form-label">VIN</label>
+                         <input type="text" id="vin" name="vin" class="form-control">
                         <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
                         <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
                     </form>
@@ -31,8 +28,8 @@
         </div>
     </div>
 
-</div>
 </main>
+
 <?php
       include("includes/footer2.php")
 ?>
