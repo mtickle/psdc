@@ -17,13 +17,15 @@
                     <div class="card-body">
                         <form action="vin_decode.php" method="post">
 
-
+                        <div class="row g-3 align-items-center">
                         <div class="col-auto">
                             <label for="inputPassword6" class="col-form-label">Password</label>
                         </div>    
                         <div class="col-auto">
                             <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
+                        </div>   
+                    </div>
 
                             <label for="vin" class="form-label">VIN</label>
                             <input type="text" id="vin" name="vin" class="form-control">
