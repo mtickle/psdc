@@ -8,7 +8,6 @@
         <h1 class="h2">Arrests</h1>
     </div>
 
-
     <div class="table-responsive">
 
         <div class="row">
@@ -54,8 +53,8 @@
         </div>
 
     </div>
-
 </main>
+
     <?php
       include("charts/arrests_chart.php"); 
       include("charts/arrests_by_gender_chart.php");  
