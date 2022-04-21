@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <form action="vin_decode.php" method="post">
 
-                            <label for="exampleInputEmail1" class="form-label">VIN</label>
+                            <label for="vin" class="form-label">VIN</label>
                             <input type="text" id="vin" name="vin" class="form-control">
                             <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
                             <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
