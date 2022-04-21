@@ -7,9 +7,9 @@ $items = $objIncident->getRecentIncidents();
 
 <style>
 #map { 
-    height: 380px; 
+    /* height: 380px; 
     width: 100%;
-    z-index: 100;
+    z-index: 100; */
   }
 
 </style>
