@@ -74,7 +74,7 @@
         </div>
     </div>
 
-
+</main>
     <?php 
         include("tables/recent_calls_table.php");
         include("charts/call_types_chart.php");

@@ -54,7 +54,8 @@
         </div>
 
     </div>
-    </div>
+
+</main>
     <?php
       include("charts/arrests_chart.php"); 
       include("charts/arrests_by_gender_chart.php");  

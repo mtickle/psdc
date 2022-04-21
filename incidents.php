@@ -12,18 +12,18 @@
     <div class="table-responsive">
 
         <div class="row">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header">
-                    Incidents Map
-                </div>
-                <div class="card-body">
-                    <?php include("maps/incidents_map.php"); ?>
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Incidents Map
+                    </div>
+                    <div class="card-body">
+                        <?php include("maps/incidents_map.php"); ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <br />
+        <br />
 
 
         <div class="row">
@@ -70,7 +70,9 @@
 
     </div>
 
-    <?php
+</main>
+
+<?php
       include("maps/incidents_map.php");
       include("charts/incidents_chart.php");
       include("charts/incidents_by_district_chart.php");
