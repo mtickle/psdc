@@ -24,13 +24,15 @@
                         <div class="col-auto">
                             <input type="text" id="vin" class="form-control">
                         </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
+                            <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
+                        </form>
+                        
                         </div>   
                     </div>
 
                          
-                            <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
-                            <a class="btn btn-primary" href="https://vingenerator.org/" target="_blank">VIN Generator</a>
-                        </form>
+                        
                         <br />
                     </div>
                 </div>
