@@ -8,7 +8,8 @@
     </div>
 
 
-    <div class="table-responsive">
+    <!-- <div class="table-responsive"> -->
+    <div class="container-fluid">
     <form action="vin_decode.php" method="post">
     <div class="row">
             <div class="col-lg-12">
