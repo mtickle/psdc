@@ -7,8 +7,6 @@
         <h1 class="h2">VIN Lookup</h1>
     </div>
 
-
-    <!-- <div class="table-responsive"> -->
     <div class="container-fluid">
     <form action="vin_decode.php" method="post">
     <div class="row">
@@ -37,7 +35,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     </form>
