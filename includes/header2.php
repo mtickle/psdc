@@ -83,7 +83,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link <?php echo $vehicles_active;?>" href="vehicles.php"><span data-feather="truck"></span>Vehicles</a>
+            <a class="nav-link <?php echo $vehicles_active;?>" href="makes.php"><span data-feather="truck"></span>Makes and Models</a>
           </li>
 
           <li class="nav-item">
@@ -94,3 +94,4 @@
 
       </div>
     </nav>
+  </div>
