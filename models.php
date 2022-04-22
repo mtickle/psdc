@@ -9,7 +9,7 @@
         <a href="makes.php">Back to Makes</a>
     </div>
 
-    <div class="table-responsive">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">

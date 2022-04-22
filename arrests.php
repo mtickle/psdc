@@ -8,7 +8,7 @@
         <h1 class="h2">Arrests</h1>
     </div>
 
-    <div class="table-responsive">
+    <div class="container-fluid">
 
         <div class="row">
             <div class="col-lg-6">

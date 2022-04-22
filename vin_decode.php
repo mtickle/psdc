@@ -36,7 +36,7 @@ foreach($decode['Results'] as $chunk) {
         <h1 class="h2">VIN Decode</h1>
     </div>
 
-    <div class="table-responsive">
+    <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
             <div class="card">

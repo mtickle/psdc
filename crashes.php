@@ -9,7 +9,7 @@
     </div>
 
 
-    <div class="table-responsive">
+    <div class="container-fluid">
 
         <div class="row">
             <div class="col-sm-8">
