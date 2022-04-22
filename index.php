@@ -7,7 +7,7 @@
     </div>
 
 
-      <div class="table-responsive">
+      <div class="container-fluid">
 
       <div class="card">
         <div class="card-header">
