@@ -47,12 +47,12 @@ class Incident {
 	}
 
 	
-	public function getArrestsByGender() {
-		$sql = "select * from get_arrests_by_gender();";
-		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
-		$data = pg_fetch_all($queryRecords);
-		return $data;
-	}
+	// public function getArrestsByGender() {
+	// 	$sql = "select * from get_arrests_by_gender();";
+	// 	$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+	// 	$data = pg_fetch_all($queryRecords);
+	// 	return $data;
+	// }
 
 	public function getIncidentsByDistrict() {
 		$sql = "select * from get_incidents_by_district();";

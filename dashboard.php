@@ -28,7 +28,7 @@
         </div>  
     </div>
 
-    <p></p>
+    <!-- <p></p>
     
     <div class="card">
         <div class="card-header">
@@ -50,7 +50,7 @@
             </div>
             </div>
         </div>  
-    </div>
+    </div> -->
 
     <p></p>
     
