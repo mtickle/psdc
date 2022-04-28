@@ -82,8 +82,8 @@
 </div>
   
 <?php
-      include("charts/arrests_chart.php"); 
-      include("charts/arrests_by_gender_chart.php");  
+    //   include("charts/arrests_chart.php"); 
+    //   include("charts/arrests_by_gender_chart.php");  
       include("charts/incidents_chart.php");
       include("charts/incidents_by_district_chart.php");
       include("charts/call_types_chart.php");
