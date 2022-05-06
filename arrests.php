@@ -10,7 +10,9 @@
 
     <div class="container-fluid">
 
-        <div class="row">
+
+
+    <div class="row">
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
@@ -36,7 +38,20 @@
                 </div>
             </div>
         </div>
+        <br />
 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Recent Arrests
+                    </div>
+                    <div class="card-body">
+                        <?php include("tables/big_arrests_table.php"); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br />
 
         <div class="row">
