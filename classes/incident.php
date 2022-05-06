@@ -32,12 +32,12 @@ class Incident {
 		return $data;
 	}
 
-	// public function getTopCharges() {
-	// 	$sql = "select * from get_top_charges();";
-	// 	$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
-	// 	$data = pg_fetch_all($queryRecords);
-	// 	return $data;
-	// }
+	public function getTopCharges() {
+		$sql = "select * from get_top_charges();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
 
 	public function getRecentCalls() {
 		$sql = "select * from get_recent_calls();";
@@ -47,12 +47,12 @@ class Incident {
 	}
 
 	
-	// public function getArrestsByGender() {
-	// 	$sql = "select * from get_arrests_by_gender();";
-	// 	$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
-	// 	$data = pg_fetch_all($queryRecords);
-	// 	return $data;
-	// }
+	public function getArrestsByGender() {
+		$sql = "select * from get_arrests_by_gender();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
 
 	public function getIncidentsByDistrict() {
 		$sql = "select * from get_incidents_by_district();";
