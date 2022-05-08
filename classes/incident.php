@@ -10,7 +10,14 @@ class Incident {
 		$connString =  $db->getConnstring();
 		$this->conn = $connString;
 	}
-	
+
+	public function getCrimeCodes() {
+		$sql = "select * from get_crime_codes();";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
 	public function getIncidents() {
 		$sql = "select * from get_incidents();";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");

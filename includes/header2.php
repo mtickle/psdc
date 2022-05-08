@@ -26,6 +26,8 @@
         $about_active = "active";
     elseif ($page == "crashes.php"):
             $crashes_active = "active";    
+    elseif ($page == "crime_code_explorer.php"):
+              $crime_code_explorer = "active";                
     endif;
     
     include("classes/incident.php");
@@ -88,6 +90,10 @@
 
           <li class="nav-item">
             <a class="nav-link  <?php echo $vin_active;?>" href="vin.php"><span data-feather="search"></span>VIN Lookup</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  <?php echo $crime_code_explorer;?>" href="crime_code_explorer.php"><span data-feather="search"></span>Crime Code Explorer</a>
           </li>
 
         </ul>
