@@ -22,6 +22,16 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                Incidents Map
+            </div>
+            <div class="card-body">
+                <?php include("maps/crime_code_incidents_map.php"); ?>
+            </div>
+        </div>
+    </div>
 </div>
 
 <br />
@@ -46,5 +56,6 @@
 </main>
 
 <?php
+    include("charts/crime_code_incidents_by_district_chart.php");
         include("includes/footer2.php")  
 ?>
