@@ -8,6 +8,7 @@ $incidents = $objIncident->getIncidentsByCrimeCode($_GET["crime_code"]);
             <thead>
                 <tr>
                     <th>Code</th>
+                    <th>District</th>
                     <th>Date</th>
                     <th>Hour</th>
                     <th>Description</th>
@@ -18,6 +19,7 @@ $incidents = $objIncident->getIncidentsByCrimeCode($_GET["crime_code"]);
                 <?php foreach($incidents as $key => $incident) :?>
                 <tr>
                     <td><?php echo $incident['crime_code'] ?></td>
+                    <td><?php echo $incident['district'] ?></td>
                     <td><?php echo $incident['reported_date'] ?></td>
                     <td><?php echo $incident['reported_hour'] ?></td>
                     <td><?php echo $incident['crime_description'] ?></td>

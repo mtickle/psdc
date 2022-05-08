@@ -15,7 +15,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        Crime Codes
+                        Crimes by Code
                     </div>
                     <div class="card-body">
                         <?php include("tables/incidents_by_crime_code.php"); ?>
