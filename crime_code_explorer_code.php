@@ -58,6 +58,6 @@
 </main>
 
 <?php
-      include("charts/incidents_chart.php");
+     include("charts/crime_code_incidents_by_district_chart.php");
       include("includes/footer2.php")  
 ?>
