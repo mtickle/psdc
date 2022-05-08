@@ -1,7 +1,7 @@
 
 <?php
 $objIncident = new Incident();
-$incidents = $objIncident->getIncidents();
+$incidents = $objIncident->getRecentIncidents();
 ?>
 
 <table id="incidents_grid" class="table" width="100%" cellspacing="0">
