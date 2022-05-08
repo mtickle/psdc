@@ -30,7 +30,7 @@ $incidents = $objIncident->getIncidentsByCrimeCode($_GET["crime_code"]);
  }).addTo(mymap);
 
 
- <?php foreach($items as $key => $item) :?>
+ <?php foreach($incidents as $key => $item) :?>
     L.marker([<?php echo $item['latitude'] ?>, <?php echo $item['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $item['crime_description'] ?><br /><?php echo $item['reported_block_address'] ?>").openPopup();
   <?php endforeach;?>
 
