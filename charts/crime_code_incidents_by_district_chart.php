@@ -1,6 +1,6 @@
 <?php
     $newObj = new Incident();
-    $incidents = $objIncident->getIncidentsByCrimeCode($_GET["crime_code"]);
+    $incidents = $objIncident->getDistrictIncidentsByCrimeCode($_GET["crime_code"]);
     $temp_charge = "";
     $temp_charge_count = "";
 
