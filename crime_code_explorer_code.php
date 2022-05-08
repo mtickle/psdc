@@ -23,15 +23,17 @@
         </div>
     </div>
     <div class="col-lg-6">
-        <div class="card">
-            <div class="card-header">
-                Incidents Map
+                <div class="card">
+                    <div class="card-header">
+                        Incidents By District
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <canvas id="IncidentsByDistrict"></canvas>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <?php include("maps/crime_code_incidents_map.php"); ?>
-            </div>
-        </div>
-    </div>
 </div>
 
 <br />
