@@ -33,6 +33,18 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        Incidents By District
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <canvas id="IncidentsByDistrict"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </div>
 
 <br />
@@ -57,5 +69,6 @@
 </main>
 
 <?php
+      include("charts/incidents_chart.php");
       include("includes/footer2.php")  
 ?>
