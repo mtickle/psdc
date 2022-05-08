@@ -18,7 +18,7 @@
                         Crime Codes
                     </div>
                     <div class="card-body">
-                        <?php include("tables/crime_code_table.php"); ?>
+                        <?php include("tables/incidents_by_crime_code.php"); ?>
                     </div>
                 </div>
             </div>
