@@ -28,3 +28,7 @@ $incidents = $objIncident->getIncidentsByCrimeCode($_GET["crime_code"]);
             <?php endforeach;?>
             </tbody>
         </table>
+
+        <br />
+
+<a class="btn btn-primary btn-sm" href="crime_code_explorer.php">Back to Codes</a>
