@@ -11,6 +11,21 @@
 
     <div class="container-fluid">
 
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                Incidents Map
+            </div>
+            <div class="card-body">
+                <?php include("maps/crime_code_incidents_map.php"); ?>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
