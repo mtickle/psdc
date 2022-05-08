@@ -93,7 +93,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link  <?php echo $crime_code_explorer;?>" href="crime_code_explorer.php"><span data-feather="search"></span>Crime Code Explorer</a>
+            <a class="nav-link  <?php echo $crime_code_explorer;?>" href="crime_code_explorer.php"><span data-feather="archive"></span>Crime Code Explorer</a>
           </li>
 
         </ul>

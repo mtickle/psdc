@@ -7,9 +7,9 @@ $items = $objIncident->getCrimeCodes();
     <table id="charge_grid" class="table" width="100%" cellspacing="0">
         <thead>
             <tr>
-               
                 <th>Code</th>
                 <th>Description</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +17,7 @@ $items = $objIncident->getCrimeCodes();
             <tr>
                 <td><?php echo $item['crime_code'] ?></td>
                 <td><?php echo $item['crime_description'] ?></td>
+                <td><a href="crime_code_explore_code.php?code=<?php echo $item['crime_code'] ?>">View</a></td>
             </tr>
         <?php endforeach;?>
         </tbody>
