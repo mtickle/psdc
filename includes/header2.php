@@ -85,6 +85,10 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link <?php echo $crashes_active;?>" href="big_calls_map.php"><span data-feather="file"></span>Big Crash Map</a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link <?php echo $vehicles_active;?>" href="makes.php"><span data-feather="truck"></span>Makes and Models</a>
           </li>
 
