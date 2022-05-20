@@ -2,7 +2,7 @@
 <?php
 include_once("classes/incident.php");
 $objIncident = new Incident();
-$calls = $objIncident->getRecentCalls();
+$calls = $objIncident->getMVCs();
 ?>
 
 <style>
@@ -30,7 +30,7 @@ $calls = $objIncident->getRecentCalls();
 
 
  <?php foreach($calls as $key => $call) :?>
-    L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['agency'] ?><br /><?php echo $call['incident'] ?>").openPopup();
+    L.marker([<?php echo $call['latitude'] ?>, <?php echo $call['longitude'] ?>]).addTo(mymap).bindPopup("<?php echo $call['call_date'] ?>").openPopup();
   <?php endforeach;?>
 
 </script>
