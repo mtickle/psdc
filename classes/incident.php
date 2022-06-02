@@ -26,8 +26,8 @@ class Incident {
 		return $data;
 	}
 
-	public function getCrimeCodeCounts() {
-		$sql = "select * from get_crime_code_counts();";
+	public function getTopCrimeCodes() {
+		$sql = "select * from get_top_crime_codes();";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
 		$data = pg_fetch_all($queryRecords);
 		return $data;

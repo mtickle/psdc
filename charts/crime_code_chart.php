@@ -2,7 +2,7 @@
     //-------------------------------------------------------------
     //--- PHP Objects
     $newObj = new Incident();
-    $crimes = $newObj->getCrimeCodes();
+    $crimes = $newObj->getTopCrimeCodes();
     $temp_description = "";
     $temp_count = "";
     //-------------------------------------------------------------\
