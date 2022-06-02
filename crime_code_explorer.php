@@ -11,6 +11,21 @@
 
     <div class="container-fluid">
 
+    <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Crime Codes
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <canvas id="CrimeCodeAnalysis"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -30,5 +45,6 @@
 </main>
 
 <?php
-      include("includes/footer2.php")  
+    include("charts/crime_code_chart.php");
+    include("includes/footer2.php")  
 ?>
