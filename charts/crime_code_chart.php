@@ -21,11 +21,11 @@
 
 <script>
 
-    var ctxCrimeCodes = document.getElementById('CrimeCodeAnalysis');
-    ctxCrimeCodes.height = 170
+    var ctxCrimeCodesChart = document.getElementById('CrimeCodeAnalysis');
+    ctxCrimeCodesChart.height = 170
     Chart.defaults.font.size=12;
 
-    var IncidentsChart = new Chart(ctxCrimeCodes, {
+    var IncidentsChart = new Chart(ctxCrimeCodesChart, {
         type: 'bar',
         data: {
             labels: [<?php echo $temp_description ?>],
