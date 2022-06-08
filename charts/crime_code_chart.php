@@ -22,7 +22,7 @@
 <script>
 
     var ctxCrimeCodesChart = document.getElementById('CrimeCodeAnalysis');
-    ctxCrimeCodesChart.height = 350
+    ctxCrimeCodesChart.height = 35
     Chart.defaults.font.size=12;
 
     var CrimeCodesChart = new Chart(ctxCrimeCodesChart, {
