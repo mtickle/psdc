@@ -25,7 +25,7 @@
     ctxCrimeCodesChart.height = 170
     Chart.defaults.font.size=12;
 
-    var IncidentsChart = new Chart(ctxCrimeCodesChart, {
+    var CrimeCodesChart = new Chart(ctxCrimeCodesChart, {
         type: 'bar',
         data: {
             labels: [<?php echo $temp_description ?>],
