@@ -7,7 +7,7 @@
       // include("charts/call_agencies_chart.php");
   
 ?>
-</div>
+
 <div class="footer-basic">
         <footer>
             <ul class="list-inline">
