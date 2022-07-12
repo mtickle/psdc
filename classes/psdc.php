@@ -19,4 +19,6 @@ class Incident {
 		return $data;
 	}
 
-    ?>
+}
+
+?>
