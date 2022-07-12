@@ -19,7 +19,7 @@ $items = $objData->getCrimeCodes();
                 <td><?php echo $item['crime_description'] ?></td>
                 <td>
                     <a href="crime_code_explorer_code.php?crime_code=<?php echo $item['crime_code'] ?>">
-                    View <?php echo $item['incident_count'] ?> Incidents
+                    View <?php echo $item['crime_count'] ?> Incidents
                 </a>
             </td>
             </tr>
