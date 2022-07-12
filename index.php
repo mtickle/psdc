@@ -18,7 +18,7 @@
             <div class="col-sm-6">
                <h5 class="card-title">Incidents by Type</h5>
                <div class="chart-container" >
-                    <canvas id="IncidentAnalysis"></canvas>
+                    <canvas id="IncidentsChart"></canvas>
                  </div>  
             </div>
             <div class="col-sm-6">
