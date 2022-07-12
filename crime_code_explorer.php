@@ -19,7 +19,7 @@
                     </div>
                     <div class="card-body">
                         <div class="chart-container">
-                            <canvas id="CrimeCodeAnalysis"></canvas>
+                            <canvas id="IncidentsChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -47,6 +47,7 @@
 </main>
 
 <?php
-    include("charts/crime_code_chart.php");
+    include("charts/incidents_chart.php");
+    //include("charts/crime_code_chart.php");
     include("includes/footer2.php")  
 ?>
