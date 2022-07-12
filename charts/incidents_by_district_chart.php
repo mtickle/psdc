@@ -1,17 +1,17 @@
 <?php
-    $newObj = new Incident();
-    $charges = $newObj->getIncidentsByDistrict();
-    $temp_charge = "";
-    $temp_charge_count = "";
+    $newObj = new Psdc();
+    $items = $newObj->getCrimeCodesByDistrict();
+    $temp_description = "";
+    $temp_count = "";
 
 	//-------------------------------------------------------------
 	//--- Build out the array for the record counts
-	foreach($charges as $key => $charge) :
-            $temp_charge .= "'". $charge['district'] . "',";
-            $temp_charge_count .= "'". $charge['district_count'] . "',";
+	foreach($items as $key => $item) :
+            $temp_description .= "'". $item['district'] . "',";
+           $temp_count .= "'". $item['district_count'] . "',";
         endforeach;
-        $temp_charge = rtrim($temp_charge, ',');
-        $temp_charge_count = rtrim($temp_charge_count, ',');
+        $temp_description = rtrim($temp_description, ',');
+       $temp_count = rtrim($temp_description_count, ',');
 	//-------------------------------------------------------------
 	
 ?>
@@ -25,9 +25,9 @@ ctxDistricts.height = 350
     var DistrictsChart = new Chart(ctxDistricts, {
         type: 'pie',
         data: {
-            labels: [<?php echo $temp_charge ?>],
+            labels: [<?php echo $temp_description ?>],
             datasets: [{label: 'District',
-                data: [<?php echo $temp_charge_count ?>],
+                data: [<?php echo$temp_count ?>],
                 backgroundColor: ['pink','lightblue','lightgreen','Lavender','AntiqueWhite','Gainsboro'],
                 borderColor: ['black'],
                 borderWidth: 1
