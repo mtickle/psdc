@@ -1,8 +1,8 @@
 <?php
     //-------------------------------------------------------------
     //--- PHP Objects
-    $data = new Psdc();
-    $crimes = $data->getTop20CrimeCodes();
+    $objData = new Psdc();
+    $items = $objData->getTop20CrimeCodes();
     $temp_description = "";
     $temp_count = "";
     //-------------------------------------------------------------\
@@ -49,7 +49,7 @@
                     	beginAtZero: true
                 	}
             
-}
+            }
         }
     });
 
