@@ -46,6 +46,13 @@ class Psdc {
 		return $data;
 	}
 
+	public function getCrimeCodes() {
+		$sql = "SELECT * FROM mv_crime_code_counts limit 10;";
+		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");
+		$data = pg_fetch_all($queryRecords);
+		return $data;
+	}
+
 	public function getCrimeCodesByDistrict() {
 		$sql = "SELECT * FROM mv_top_crime_codes_by_district;";
 		$queryRecords = pg_query($this->conn, $sql) or die("error to fetch incidents data");

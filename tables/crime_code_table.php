@@ -1,7 +1,7 @@
     
 <?php
-$objIncident = new Incident();
-$items = $objIncident->getCrimeCodes();
+$objData = new Psdc();
+$items = $objData->getCrimeCodes();
 ?>
     
     <table id="charge_grid" class="table" width="100%" cellspacing="0">
