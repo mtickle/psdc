@@ -47,7 +47,7 @@
 </main>
 
 <?php
-    include("charts/incidents_chart.php");
+    include("charts/incidents_chart_small.php");
     //include("charts/crime_code_chart.php");
     include("includes/footer2.php")  
 ?>
