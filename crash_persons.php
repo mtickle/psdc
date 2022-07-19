@@ -5,7 +5,7 @@
 
     <div
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Crash Data</h1>
+        <h1 class="h2">Crash Persons</h1>
     </div>
 
 
@@ -38,14 +38,29 @@
             </div>
         </div>
         <br />
+       
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        Data
+                        Crash Factors by Person
                     </div>
                     <div class="card-body">
                         <?php include("tables/crash_factors_table.php"); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        Last 20 Crash Persons
+                    </div>
+                    <div class="card-body">
+                        <?php include("tables/crash_persons_table.php"); ?>
                     </div>
                 </div>
             </div>
