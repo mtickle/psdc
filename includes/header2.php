@@ -24,8 +24,8 @@
           $vin_active = "active";             
     elseif ($page == "about.php"):
         $about_active = "active";
-    elseif ($page == "crashes.php"):
-            $crashes_active = "active";    
+    elseif ($page == "crash_persons.php"):
+            $crash_persons_active = "active";    
     elseif ($page == "crime_code_explorer.php"):
               $crime_code_explorer = "active";                
     endif;
@@ -82,7 +82,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link <?php echo $crashes_active;?>" href="crashes.php"><span data-feather="file"></span>Crashes</a>
+            <a class="nav-link <?php echo $crash_persons_active;?>" href="crash_persons.php"><span data-feather="file"></span>Crash Persons</a>
           </li>
 
           <li class="nav-item">
