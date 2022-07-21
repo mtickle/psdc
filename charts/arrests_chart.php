@@ -5,6 +5,7 @@
     $charges = $newObj->getTopCharges();
     $temp_charge = "";
     $temp_charge_count = "";
+    $temp_color = "";
     //-------------------------------------------------------------
 
 	//-------------------------------------------------------------
@@ -12,6 +13,7 @@
 	foreach($charges as $key => $charge) :
             $temp_charge .= "'". $charge['charge'] . "',";
             $temp_charge_count .= "'". $charge['charge_count'] . "',";
+            $temp_color .= "'". echo( "#%06X", mt_rand( 0, 0xFFFFFF )); . "'";
     endforeach;
     $temp_charge = rtrim($temp_charge, ',');
     $temp_charge_count = rtrim($temp_charge_count, ',');
@@ -32,7 +34,7 @@ var ChargesChart = new Chart(ctxCharges, {
         datasets: [{
             label: 'Number of Arrests',
             data: [<?php echo $temp_charge_count ?>],
-            backgroundColor: ['<?php printf( "#%06X", mt_rand( 0, 0xFFFFFF ));?>'],
+            backgroundColor: [<?php echo $temp_color ?>],
             borderColor: ['black'],
             borderWidth: 1
         }]
