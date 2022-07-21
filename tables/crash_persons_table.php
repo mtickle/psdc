@@ -1,5 +1,8 @@
     
 <?php
+
+include("classes/cls_crash_persons.php");
+
 $objPsdc = new Psdc();
 $items = $objPsdc->getCrashPersons();
 ?>
