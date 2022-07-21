@@ -32,7 +32,7 @@ var ChargesChart = new Chart(ctxCharges, {
         datasets: [{
             label: 'Number of Arrests',
             data: [<?php echo $temp_charge_count ?>],
-            backgroundColor: ['<?php printf( "%06X", mt_rand( 0, 0xFFFFFF ));?>'],
+            backgroundColor: ['<?php printf( "#%06X", mt_rand( 0, 0xFFFFFF ));?>'],
             borderColor: ['black'],
             borderWidth: 1
         }]
