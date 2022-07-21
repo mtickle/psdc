@@ -13,7 +13,7 @@
 	foreach($charges as $key => $charge) :
             $temp_charge .= "'". $charge['charge'] . "',";
             $temp_charge_count .= "'". $charge['charge_count'] . "',";
-            $temp_color .= "'". ("#%06X", mt_rand( 0, 0xFFFFFF )); . "'";
+            $temp_color .= "'". printf("#%06X", mt_rand( 0, 0xFFFFFF )) . "'";
     endforeach;
     $temp_charge = rtrim($temp_charge, ',');
     $temp_charge_count = rtrim($temp_charge_count, ',');
